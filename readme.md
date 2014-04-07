@@ -94,27 +94,32 @@ PHP code should generally follow the [PEAR coding standards](http://pear.php.net
         }
     }
 
+
+## Environments
+
+Certain environments necessitate different standards.
+
 ### Wordpress
+
+#### PHP
 
 Wordpress has its own recommended coding standards for PHP. Some of these are specific to Wordpress patterns, some are general PHP formats. Some of these standards are great. Some are terrible.
 
-#### [Space Usage](http://make.wordpress.org/core/handbook/coding-standards/php/#space-usage)
+##### [Space Usage](http://make.wordpress.org/core/handbook/coding-standards/php/#space-usage)
 
 **DO NOT FOLLOW THIS STANDARD**. It leads to wide, over-readable code. Your lines should be simple enough that they are readable without inflating them with spaces.
 
-#### [Naming Conventions](http://make.wordpress.org/core/handbook/coding-standards/php/#naming-conventions)
+##### [Naming Conventions](http://make.wordpress.org/core/handbook/coding-standards/php/#naming-conventions)
 
 **DO NOT FOLLOW THIS STANDARD**. It goes against most good coding standards. Underscore use inflates line length and provides little more readability than camel or studly case.
 
-#### [Yoda Conditions](http://make.wordpress.org/core/handbook/coding-standards/php/#yoda-conditions)
+##### [Yoda Conditions](http://make.wordpress.org/core/handbook/coding-standards/php/#yoda-conditions)
 
 **DO** try to follow this standard. It might feel backward, but it provides a stop gap for mistakenly modifying a variable.
 
-## Javascript
+#### Javascript
 
-### Wordpress
-
-#### Enqueueing
+##### Enqueueing
 
 Standard, widely used libraries like jQuery, Backbone, and Underscore are available for enqueueing from the Wordpress core. These must absolutely be enqueued using the standard arguments. Plugins and core functionality expects these scripts to be loaded and configured in a particular manner.
 
@@ -122,7 +127,7 @@ Custom scripts can be loaded either through enqueueing or through an AMD system 
 
 Scripts should be enqueued in the functions file (or one of its required files). Scripts should never be enqueued in templates.
 
-#### Globals
+##### Globals
 
 Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized at enqueueing using [wp_localize_script](http://codex.wordpress.org/Function_Reference/wp_localize_script). This is also a useful method for bootstrapping data for Backbone.
 
