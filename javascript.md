@@ -4,7 +4,9 @@ All Javascript code should follow the general style outlines.
 
 ## Linter
 
-[JSHint][jsHint] is arguably the best linter for the language as it additionally measures important things like cyclomatic complexity, number of statements, ect. A list of defaults should be set (globally and for each project). Global variables should be outlined either in the project defaults or on a file by file basis.
+[JSHint](http://www.jshint.com/) is arguably the best linter for the language as it additionally measures important things like cyclomatic complexity, number of statements, ect. A list of defaults should be set (globally and for each project). Global variables should be outlined either in the project defaults or on a file by file basis.
+
+JSHint provides [a good starting point](https://github.com/jshint/jshint/blob/master/examples/.jshintrc) for a defaults file.
 
 ## Environments
 
@@ -14,13 +16,13 @@ All Javascript code should follow the general style outlines.
 
 Standard, widely used libraries like jQuery, Backbone, and Underscore are available for enqueueing from the Wordpress core. These must absolutely be enqueued using the standard arguments. Plugins and core functionality expects these scripts to be loaded and configured in a particular manner.
 
-Custom scripts can be loaded either through enqueueing or through an AMD system like [RequireJS][requireJs]. We are moving towards using AMD modules as much as possible.
+Custom scripts can be loaded either through enqueueing or through an AMD system like [RequireJS](http://requirejs.org/). We are moving towards using AMD modules as much as possible.
 
 Scripts should be enqueued in the functions file (or one of its required files). Scripts should never be enqueued in templates.
 
 #### Globals
 
-Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized at enqueueing using [wp_localize_script][wpL10n]. This is also a useful method for bootstrapping data for Backbone.
+Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized at enqueueing using [wp_localize_script](http://codex.wordpress.org/Function_Reference/wp_localize_script). This is also a useful method for bootstrapping data for Backbone.
 
     <?php
 
@@ -41,6 +43,3 @@ Certain values, such as URLs and values set in the admin, should not be assumed 
     wp_enqueue_script('some-handle');
     ?>
 
- [jsHint]: http://www.jshint.com/
- [requireJs]: http://requirejs.org/
- [wpL10n]: http://codex.wordpress.org/Function_Reference/wp_localize_script
