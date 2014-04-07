@@ -124,11 +124,22 @@ Wordpress has [good standards][wpCSS] for this. Properties should be in this gen
 
 ### Selectors
 
-#### Don't use IDs for selectors
+Always target elements using these techniques in this order:
 
-ID selectors are
+* Add a specific class to the element
+* Add a specific class to the parent and target the element using the parents class and a child tag name
 
-See https://github.com/stubbornella/csslint/wiki/Disallow-IDs-in-selectors
+Do not overqualify selectors. Only use as many selectors as are needed to target the element without over specificity or underspecificity.
+
+#### Don't use IDs for style selectors
+
+ID selectors are highly targeted, and should be completely unique. While this might be great at first, elements often need to be resued on a page.
+
+[CSSLint][cssLintID] warns against use of ID selectors.
+
+#### Don't use descendant selector
+
+The descendant selector is expensive and over qualified. Only use when there is no other way (this is likely in Wordpress wp_nav_menus).
 
 ## Environments
 
