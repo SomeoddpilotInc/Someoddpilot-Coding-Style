@@ -58,41 +58,6 @@ Code should **always** be linted by the appropriate linter. Sloppy code is dange
 
 [PHP Coding Standards Fixer](https://github.com/fabpot/PHP-CS-Fixer) should only be used as a last resort, not a tool. You should write your code to standards and only use this tool when formatting legacy code.
 
-### Javascript
-
-[JSHint](http://www.jshint.com/) is arguably the best linter for the language as it additionally measures important things like cyclomatic complexity, number of statements, ect. A list of defaults should be set (globally and for each project). Global variables should be outlined either in the project defaults or on a file by file basis.
-
-## PHP
-
-PHP code should generally follow the [PEAR coding standards](http://pear.php.net/manual/en/standards.php). These standards provide a good middle ground between readability, conciseness, and stability.
-
-#### [PSR-2 Example](http://www.php-fig.org/psr/psr-2/)
-
-    <?php
-    namespace Vendor\Package;
-
-    use FooInterface;
-    use BarClass as Bar;
-    use OtherVendor\OtherPackage\BazClass;
-
-    class Foo extends Bar implements FooInterface
-    {
-        public function sampleFunction($a, $b = null)
-        {
-            if ($a === $b) {
-                bar();
-            } elseif ($a > $b) {
-                $foo->bar($arg1);
-            } else {
-                BazClass::bar($arg2, $arg3);
-            }
-        }
-
-        final public static function bar()
-        {
-            // method body
-        }
-    }
 
 ## Environments
 
