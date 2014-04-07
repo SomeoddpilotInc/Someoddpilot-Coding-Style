@@ -8,7 +8,7 @@ You should generally use a single quote for strings:
 
     var stringVar = 'this is a string';
 
-Only use double quotes when required by syntax (JSON), needed for special characters (\n in PHP), or the number of escape characters would be ridiculously silly (`'\'What if I were double escaping \\'a quote\\'\''`).
+Only use double quotes when required by syntax (JSON), needed for special characters (\n in PHP), or the number of escape characters would be ridiculously silly (`'\'What if I were double escaping \\'a quote\\'\''` (But that is exorbitantly silly. **Really** don't do that.)).
 
 ### Tabs
 
