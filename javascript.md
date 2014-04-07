@@ -2,6 +2,22 @@
 
 All Javascript code should follow the general style outlines.
 
+## jQuery
+
+What is jQuery?
+
+> jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+>
+> [jquery.com](http://jquery.com/)
+
+What is jQuery not?
+
+jQuery is not a utility for general Javascript patterns. Use it for what it is good for, but leave the rest to more approriate libraries.
+
+## Backbone
+
+Backbone is our go to library for MV* pattern Javascript.
+
 ## Linter
 
 [JSHint](http://www.jshint.com/) is arguably the best linter for the language as it additionally measures important things like cyclomatic complexity, number of statements, ect. A list of defaults should be set (globally and for each project). Global variables should be outlined either in the project defaults or on a file by file basis.
@@ -55,3 +71,11 @@ Certain values, such as URLs and values set in the admin, should not be assumed 
     wp_enqueue_script('some-handle');
     ?>
 
+## Tools
+
+* [RequireJS](http://requirejs.org/)
+* [JSHint](http://www.jshint.com/)
+* [Bower](http://bower.io)
+* [Grunt](http://gruntjs.com/)
+* [npm](https://www.npmjs.org/)
+* [Node.js](http://nodejs.org/)
