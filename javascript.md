@@ -8,6 +8,18 @@ All Javascript code should follow the general style outlines.
 
 JSHint provides [a good starting point](https://github.com/jshint/jshint/blob/master/examples/.jshintrc) for a defaults file.
 
+## AMD
+
+Javascript compontents should be written in a modular fashion. Dependencies should be clear and variables and functions should be encapsulated.
+
+* [Lightweight jQuery Plugin Start](https://github.com/jquery-boilerplate/jquery-patterns/blob/master/patterns/jquery.basic.plugin-boilerplate.js)
+
+## Minification
+
+All Javascript code should be built with the expectation that it will be minified before being deployed.
+
+Currently we are using Require.js for managing dependencies and loading Javascript files. Projects should be optimized using the [RequireJS optimization tools](http://requirejs.org/docs/optimization.html) prior to deployment. These tools will combine scripts into discrete, minified packages.
+
 ## Environments
 
 ### Wordpress
