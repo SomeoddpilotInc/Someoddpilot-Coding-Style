@@ -114,7 +114,7 @@ We are experimenting with [Compass](compass-style.org) for providing great usefu
 
 ### Property ordering
 
-Wordpress has [good standards](http://make.wordpress.org/core/handbook/coding-standards/css/#property-ordering) for this. Properties should be in this general order:
+Wordpress has [good standards][wpCSS] for this. Properties should be in this general order:
 
 * Display
 * Positioning
@@ -184,7 +184,6 @@ Certain values, such as URLs and values set in the admin, should not be assumed 
     // The script can be enqueued now or later.
     wp_enqueue_script('some-handle');
     ?>
-
-## References
-
+ [cssLintID]: https://github.com/stubbornella/csslint/wiki/Disallow-IDs-in-selectors
+ [wpCSS]: http://make.wordpress.org/core/handbook/coding-standards/css/#property-ordering
  [refMDNCSS]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
