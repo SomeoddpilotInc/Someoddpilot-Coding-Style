@@ -56,6 +56,10 @@ Code should **always** be linted by the appropriate linter. Sloppy code is dange
 
 [PHP CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer/) is a rock solid linter for PEAR standards.
 
+[PHP Mess Detector](http://phpmd.org/) is another vital part of the PHP linting workflow. It tests for unused variables, bugs, suboptimal code, and complicated expressions.
+
+[PHP Coding Standards Fixer](https://github.com/fabpot/PHP-CS-Fixer) should only be used as a last resort, not a tool. You should write your code to standards and only use this tool when formatting legacy code.
+
 ### Javascript
 
 [JSHint](http://www.jshint.com/) is arguably the best linter for the language as it additionally measures important things like cyclomatic complexity, number of statements, ect. A list of defaults should be set (globally and for each project). Global variables should be outlined either in the project defaults or on a file by file basis.
