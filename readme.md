@@ -58,3 +58,13 @@ Code should **always** be linted by the appropriate linter. Sloppy code is dange
 ## Comments
 
 Comments are reserved for descriptions of functionality, not legacy code. Old, untested code should be removed. It will live on in our hearts and our source control.
+
+## Package management
+
+### Bower
+
+Use [Bower](http://bower.io/) to install front end components.
+
+### npm
+
+Use [npm](http://www.npmjs.org/) to install Node.js modules.
