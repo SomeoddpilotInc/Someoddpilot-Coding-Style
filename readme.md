@@ -100,6 +100,10 @@ You should follow some general standards:
 
 * [MDN - Writing efficient CSS][refMDNCSS]
 
+### Naming
+
+Classes should be hyphen deliminated (e.g. `.foo-bar` not `.foo_bar` or `.fooBar`).
+
 ### SASS (SCSS)
 
 CSS should not be handwritten. It should be preprocessed through [SASS](http://sass-lang.com/) to increase reusabliity, abstraction, and conciseness.
