@@ -42,9 +42,7 @@ The general style rules for control structures are as follows:
 * Class names MUST be declared in `StudlyCaps`.
 * Method names MUST be declared in `camelCase`.
 
-## File Structure
-
-### One thing per file
+### File Structure
 
 One *Thing*, be it a class, a template, set of CSS styles, should be contained in a single file. It should be named in an appropriate manor. This decreases confusion about where to find and edit these general things and their contents.
 
