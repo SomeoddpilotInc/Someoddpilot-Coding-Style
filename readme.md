@@ -54,3 +54,7 @@ One *Thing*, be it a class, a template, set of CSS styles, should be contained i
 ## Linters
 
 Code should **always** be linted by the appropriate linter. Sloppy code is dangerous code.
+
+## Comments
+
+Comments are reserved for descriptions of functionality, not legacy code. Old, untested code should be removed. It will live on in our hearts and our source control.
