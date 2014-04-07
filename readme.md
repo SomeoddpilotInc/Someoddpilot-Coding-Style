@@ -95,3 +95,20 @@ PHP code should generally follow the [PEAR coding standards](http://pear.php.net
             // method body
         }
     }
+
+### Wordpress
+
+Wordpress has its own recommended coding standards for PHP. Some of these are specific to Wordpress patterns, some are general PHP formats. Some of these standards are great. Some are terrible.
+
+#### [Space Usage](http://make.wordpress.org/core/handbook/coding-standards/php/#space-usage)
+
+**DO NOT FOLLOW THIS STANDARD**. It leads to wide, over-readable code. Your lines should be simple enough that they are readable without inflating them with spaces.
+
+#### [Naming Conventions](http://make.wordpress.org/core/handbook/coding-standards/php/#naming-conventions)
+
+**DO NOT FOLLOW THIS STANDARD**. It goes against most good coding standards. Underscore use inflates line length and provides little more readability than camel or studly case.
+
+#### [Yoda Conditions](http://make.wordpress.org/core/handbook/coding-standards/php/#yoda-conditions)
+
+**DO** try to follow this standard. It might feel backward, but it provides a stop gap for mistakenly modifying a variable.
+
