@@ -12,6 +12,12 @@ Classes should be hyphen deliminated (e.g. `.foo-bar` not `.foo_bar` or `.fooBar
 
 CSS should not be handwritten. It should be preprocessed through [SASS][sass] to increase reusabliity, abstraction, and conciseness.
 
+## Bootstrap
+
+The [Twitter Bootstrap 3.0][bootstrap] forms the base of our styling providing great, up to date boilerplate styling which is easy to mold and adapt.
+
+Bootstrap's style should be extended using the [SASS port][bootstrapSass].
+
 ## Compass
 
 We are experimenting with [Compass][compass] for providing great useful mixins and processing functions. Use it!
@@ -49,11 +55,11 @@ The descendant selector is expensive and over qualified. Only use when there is 
 
 Use [CSS Lint][cssLint] for linting your CSS.
 
-## References
-
  [sass]: http://sass-lang.com/
  [compass]: compass-style.org
  [cssLint]: http://csslint.net/about.html
  [cssLintID]: https://github.com/stubbornella/csslint/wiki/Disallow-IDs-in-selectors
  [wpCSS]: http://make.wordpress.org/core/handbook/coding-standards/css/#property-ordering
  [refMDNCSS]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
+ [bootstrap]: https://github.com/twbs/bootstrap
+ [bootstrapSass]: https://github.com/twbs/bootstrap-sass
