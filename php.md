@@ -118,7 +118,9 @@ A little too much for the average user, and tends to confuse users. We're lookin
 
 ##### [JSON API][jsonapi]
 
-RESTful API for accessing posts and taxonomies.
+A RESTful API for accessing posts and taxonomies.
+
+The API makes many common AJAX tasks incredibly easy without dealing with the mess of wp_ajax_actions.
 
  [pearStandards]: http://pear.php.net/manual/en/standards.php
  [psr2Exp]: http://www.php-fig.org/psr/psr-2/
