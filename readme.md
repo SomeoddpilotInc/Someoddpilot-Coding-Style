@@ -11,22 +11,22 @@
 
 The right things should be done by the right thing in the right place. It sounds at once both intuitive and also like a wicked problem.
 
-CSS
+### CSS
 * Appearance (colors, type)
 * Layout (position, columns, sizing)
 * Transitions
 * Animation
 
-Javascript
+### Javascript
 * Interactive behavior
 * Feature detection
 * Progressive enhancement
 * Loading dependencies
 
-PHP
+### PHP
 * Bootstrapping content and data
 
-### Antipaterns
+### Anti-patterns
 
 Javascript should not be used to modify appearance directly. This affects temporarily applied styles and animations. Historically jQuery was used to animate and add style properties. With widespread availability of CSS3 transitions and animations, these CSS level appearance changes should be used as much as possible.
 

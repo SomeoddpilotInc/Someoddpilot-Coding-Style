@@ -72,6 +72,54 @@ DO NOT FOLLOW THIS STANDARD. It goes against most good coding standards. Undersc
 
 DO try to follow this standard. It might feel backward, but it provides a stop gap for mistakenly modifying a variable.
 
+#### Enqueuing
+
+The jury is out on enqueuing. Its a great practice as a baseline, but interferes with AMD. Frequently loaded libraries (jQuery) which are modified by plugins (what a terrible practice), should still be enqueued. An AMD shim should be used in place.
+
+#### Templating
+
+Templates should have no variables in their scope. Instead, encapsulate logic in a function.
+
+Template parts should always be separated out into a separate template part for reuse in other templates.
+
+#### Plugins
+
+Plugins should only be used for large, extensive features that are difficult to program and are not available in the Wordpress core. Plugins should also have extensive documentation and a great track record.
+
+Modifying table columns, adding custom post types, and other modifications can all be done through the Wordpress core and should not require a plugin.
+
+Use a plugin's functions, actions, and filters over admin UI controls. Database settings and their controls can get warped, deleted, updated, etc. and are hard to source control and document.
+
+##### [Advanced Custom Fields][acf]
+
+Custom meta fields for posts, taxonomies, and options.
+
+Custom fields should always be exported out before production.
+
+##### [Gravity Forms][gf]
+
+Contact forms creation and submission handler.
+
+There are a number of extensions for user registration, Mailchimp signup, Paypal integration.
+
+##### [WPML][wpml]
+
+Multilingual content manager.
+
+This is not a plugin for managing hard coded translations. That should be handled by Wordpress' core __ functions.
+
+There are some problems with this plugin, so it should be used with caution.
+
+##### [W3 Total Cache][w3cache]
+
+Caching.
+
+A little too much for the average user, and tends to confuse users. We're looking to replace this.
+
+##### [JSON API][jsonapi]
+
+RESTful API for accessing posts and taxonomies.
+
  [pearStandards]: http://pear.php.net/manual/en/standards.php
  [psr2Exp]: http://www.php-fig.org/psr/psr-2/
  [phpCS]: http://pear.php.net/package/PHP_CodeSniffer/
@@ -80,3 +128,8 @@ DO try to follow this standard. It might feel backward, but it provides a stop g
  [makeWpSpace]: http://make.wordpress.org/core/handbook/coding-standards/php/#space-usage
  [makeWpName]: http://make.wordpress.org/core/handbook/coding-standards/php/#naming-conventions
  [makeWpYoda]: http://make.wordpress.org/core/handbook/coding-standards/php/#yoda-conditions
+ [acf]: http://www.advancedcustomfields.com/
+ [gf]: http://www.gravityforms.com/
+ [wpml]: http://wpml.org/
+ [w3cache]: https://wordpress.org/plugins/w3-total-cache/
+ [jsonapi]: wordpress.org/plugins/json-api/
