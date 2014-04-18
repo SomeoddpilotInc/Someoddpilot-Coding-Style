@@ -55,6 +55,12 @@ The descendant selector is expensive and over qualified. Only use when there is 
 
 Use [CSS Lint][cssLint] for linting your CSS.
 
+## Progressive Enhancement
+
+Expect users to not always have the shiniest, latest features. Provide a stable, usable baseline and add improved appearance when properties are available.
+
+Use Modernizr's classes to detect features when available.
+
  [sass]: http://sass-lang.com/
  [compass]: compass-style.org
  [cssLint]: http://csslint.net/about.html
