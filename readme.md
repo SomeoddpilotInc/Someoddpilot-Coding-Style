@@ -7,6 +7,39 @@
 * [HTML](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/html.md)
 * [CSS](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/css.md)
 
+## Separation of Concerns
+
+The right things should be done by the right thing in the right place. It sounds at once both intuitive and also like a wicked problem.
+
+CSS
+* Appearance (colors, type)
+* Layout (position, columns, sizing)
+* Transitions
+* Animation
+
+Javascript
+* Interactive behavior
+* Feature detection
+* Progressive enhancement
+* Loading dependencies
+
+PHP
+* Bootstrapping content and data
+
+### Antipaterns
+
+Javascript should not be used to modify appearance directly. This affects temporarily applied styles and animations. Historically jQuery was used to animate and add style properties. With widespread availability of CSS3 transitions and animations, these CSS level appearance changes should be used as much as possible.
+
+CSS and jQuery selectors should be tag agnostic. This allows flexibility in reuse by adding a class to any tag.
+
+Tables should be used only for tabular data. Use of tables for other data is highly opinionated and makes restyling highly difficult.
+
+Javascript modules should be loaded asynchronously, specifying their dependencies. Historically scripts were loaded through multiple script tags. This historical approach makes assumptions that the correct dependencies will be loaded and without error before execution. Asynchronious loading allows more intelligent dependencie management and encapsulation.
+
+Responsive styling should be done entirely via CSS. Historically Javascript was used to detect window width changes and to apply new styles.
+
+Content should always be sent with the initial HTML. Search engines and other audiences cannot always access content loaded via an interactive layer. Content should only be updated via Javascript, not initially loaded.
+
 ## Quotes
 
 You should generally use a single quote for strings:

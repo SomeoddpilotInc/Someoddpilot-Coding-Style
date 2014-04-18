@@ -14,6 +14,10 @@ What is jQuery not?
 
 jQuery is not a utility for general Javascript patterns. Use it for what it is good for, but leave the rest to more approriate libraries.
 
+## Underscore
+
+Underscore is a great, functional Javascript library.
+
 ## Backbone
 
 Backbone is our go to library for MV* pattern Javascript.
@@ -79,3 +83,6 @@ Certain values, such as URLs and values set in the admin, should not be assumed 
 * [Grunt](http://gruntjs.com/)
 * [npm](https://www.npmjs.org/)
 * [Node.js](http://nodejs.org/)
+* Backbone
+* jQuery
+* Underscore
