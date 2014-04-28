@@ -94,11 +94,11 @@ Comments are reserved for descriptions of functionality, not legacy code. Old, u
 
 ### Bower
 
-Use [Bower](http://bower.io/) to install front end components.
+Use [Bower][bower] to install front end components.
 
 ### npm
 
-Use [npm](http://www.npmjs.org/) to install Node.js modules.
+Use [npm][npm] to install Node.js modules.
 
 ## Code Analysis
 
@@ -137,3 +137,6 @@ Functionality should be tested in in
 * IE (Latest, 8)
 
 Testing should occur in native, hardware environment, not emulated.
+
+[bower]: http://bower.io/
+[npm]: http://www.npmjs.org/
