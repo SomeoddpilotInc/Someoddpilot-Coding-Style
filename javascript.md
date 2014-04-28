@@ -44,6 +44,8 @@ Modules should be loaded when required by the scripts they depend on. We use [Re
 
 All Javascript code should be built with the expectation that it will be minified before being deployed.
 
+## Concatenization
+
 Currently we are using Require.js for managing dependencies and loading Javascript files. Projects should be optimized using the [RequireJS optimization tools][requirejsOptim] prior to deployment. These tools will combine scripts into discrete, minified packages.
 
 ## Bower
