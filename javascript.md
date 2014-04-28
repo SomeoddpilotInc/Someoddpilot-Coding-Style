@@ -64,6 +64,12 @@ Files for front end Javascript modules should be installed via [Bower][bower]. B
 
 [Grunt][grunt] is a Node based task runner that can perform a number of useful development tasks like minification, concatenization, and documenation.
 
+## Testing
+
+### Jasmine
+
+We use Jasmine for our Javascript unit testing.
+
 ## Environments
 
 ### Wordpress
