@@ -42,11 +42,9 @@ Content should always be sent with the initial HTML. Search engines and other au
 
 ## Quotes
 
-You should generally use a single quote for strings:
+You should generally use a double quote for strings:
 
-    var stringVar = 'this is a string';
-
-Only use double quotes when required by syntax (JSON), needed for special characters (\n in PHP), or the number of escape characters would be ridiculously silly.
+    var stringVar = "this is a string";
 
 ## Tabs
 
@@ -101,3 +99,41 @@ Use [Bower](http://bower.io/) to install front end components.
 ### npm
 
 Use [npm](http://www.npmjs.org/) to install Node.js modules.
+
+## Code Analysis
+
+### Simian
+
+Projects should be run through Simian to find lines of code that are similar. These lines should be refactored.
+
+    -excludes={*.sublime-workspace,node_modules,bower_components}
+    -includes={**/,}**/*.{js,php,scss,hbs}
+    -formatter=plain:simian.txt
+    -threshold=4
+
+## Testing
+
+### Unit Testing
+
+Significan modules should always be unit tested. Unit tests provide a quickly repeatable way to automatically test functionality and prevent newer code from interfering with previous code.
+
+#### Behavior Driven
+
+Interactive modules should be tested with behavior driven tests to ensure that interactivity is functional in all environments through all stages of development.
+
+#### Test Driven
+
+Modules with complex, custom CRUD operations or calculations should be developed using test driven fundamentals.
+
+### Browser Testing
+
+Functionality should be tested in in
+
+* Safari (Latest)
+* Chrome (Latest)
+* Mozilla (Latest)
+* iOS (Latest)
+* Android (Latest)
+* IE (Latest, 8)
+
+Testing should occur in native, hardware environment, not emulated.
