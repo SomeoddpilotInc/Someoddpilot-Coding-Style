@@ -12,6 +12,11 @@ Some basic principals apply to all programming, regardless of language.
 
 Some basic conventions apply across all languages.
 
+## Workflow
+
+* [Front End Workflow](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/front.md)
+* [Back End Workflow](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/back.md)
+
 ## Languages
 
 * [PHP](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/php.md)
