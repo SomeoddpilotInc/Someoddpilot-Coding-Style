@@ -19,6 +19,10 @@ Some basic conventions apply across all languages.
 * [HTML](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/html.md)
 * [CSS](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/css.md)
 
+## Templating
+
+[Templating principles](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/templating.md)
+
 ## Package management
 
 Package managers allows automation of the installation process of tools and libraries. This installation process can then be repeated easily as the code base is changed, pushed to other developers, and ultimately deployed.
