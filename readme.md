@@ -93,25 +93,27 @@ Use media queries to detect screen widths.
 
 * [CSS media queries - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
 
-## Tabs
+## Conventions
 
-Code MUST use 2 spaces for indenting tabs.
+### Tabs
 
-## Line length
+Code MUST use 2 spaces for indenting tabs. (Except for PHP which uses a 4 space standard)
+
+### Line length
 
 Lines SHOULD be 85 characters or less. This is a soft limit, as certain syntaxes, minifications, etc require longer lines. But in general, all code should really be less.
 
-## White space
+### White space
 
 There MUST NOT be trailing whitespace at the end of non-blank lines.
 
-## Statements
+### Statements
 
 There MUST NOT be more than one statement per line.
 
-## Control Structures
+### Control Structures
 
-The general style rules for control structures are as follows:
+Control structures must follow certain standards. These standards increase readability and comprehension. The general style rules for control structures are as follows:
 
 * There MUST be one space after the control structure keyword
 * There MUST NOT be a space after the opening parenthesis
@@ -120,14 +122,34 @@ The general style rules for control structures are as follows:
 * The structure body MUST be indented once
 * The closing brace MUST be on the next line after the body
 
-## Naming
+**Good**
+
+```
+if (condition) {
+  do(something);
+}
+```
+
+**Bad**
+
+```
+if( condition ){ do(something); }
+```
+
+Avoid using `else` statements where possible by using returns. This decreases the complexity of functions.
+
+### Naming
 
 * Class names MUST be declared in `StudlyCaps`.
 * Method names MUST be declared in `camelCase`.
 
-## File Structure
+### File Structure
 
 One *Thing*, be it a class, a template, set of CSS styles, should be contained in a single file. It should be named in an appropriate manor. This decreases confusion about where to find and edit these general things and their contents.
+
+* Files containing classes MUST be named in `StudlyCaps`
+* Otherwise, files should be lowercase with hyphen (`-`) separation between words
+* File modifications like `gz` and `min` should be separated by a dot `.`
 
 ## Linters
 
