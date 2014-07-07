@@ -2,17 +2,15 @@
 
 ## [Practices](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/practices.md)
 
-## Principles
+We have some common practices in our development workflow.
+
+## [Basic Programming Principles](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/principles.md)
 
 Some basic principals apply to all programming, regardless of language.
 
-[Basic Programming Principles](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/principles.md)
-
-## Conventions
+## [Conventions](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/conventions.md)
 
 Some basic conventions apply across all languages.
-
-[Conventions](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/conventions.md)
 
 ## Languages
 
