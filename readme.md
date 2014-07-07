@@ -129,3 +129,7 @@ Testing should occur in native, hardware environment, not emulated.
 * [Unit Testing - Wikipedia](http://en.wikipedia.org/wiki/Unit_testing)
 * [Behaviour Driven Testing - Wikipedia](http://en.wikipedia.org/wiki/Behavior-driven_development)
 * [Test Driven Development - Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development)
+
+## [Reference](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/books.md)
+
+We have tons of books on programming. Talk to me and I'll find what you're looking for.
