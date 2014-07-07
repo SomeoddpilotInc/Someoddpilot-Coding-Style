@@ -1,5 +1,41 @@
 # Someoddpilot Coding Style
 
+## Principles
+
+Some basic principals apply to all programming, regardless of language.
+
+### DRY (Don't repeat yourself)
+
+Do something once. Grin and bear it when you do it again. If you do it three times, find an abstraction.
+
+Use loops, functions, classes, etc to avoid repetition.
+
+* [DRY - Wikipedia][drywiki]
+
+### KISS (Keep it simple, stupid)
+
+Avoid complexity. Simpler methods, classes, etc make code easier to understand, abstract, and modify. Make things as simple as they need to be.
+
+* [KISS - Wikipedia][kisswiki]
+
+### Open/Closed Principle
+
+Things should be extendable, but not directly modifiable. Create abstracted things with interfaces that can be modified later.
+
+* [Open Closed Principal - Wikipedia][ocpwiki]
+
+### Single Responsibility Principle
+
+Each thing, be it a class or a method, should do one task and do it well.
+
+* [Single Responsibility Principle - Wikipedia][srpwiki]
+
+### Loose Coupling
+
+Minimize the number of dependencies and assumptions for each module.
+
+* [Coupling - Wikipedia][coupwiki]
+
 ## Languages
 
 * [PHP](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/php.md)
@@ -221,6 +257,10 @@ Projects should be run through Simian to find lines of code that are similar. Th
     -formatter=plain:simian.txt
     -threshold=4
 
+### Tasks
+
+All common tasks should be automated and configurable. Use [Grunt][grunt] to create tasks which can be run via the command line or by watching a set of files.
+
 ## Testing
 
 ### Unit Testing
@@ -248,6 +288,11 @@ Functionality should be tested in in
 
 Testing should occur in native, hardware environment, not emulated.
 
+[drywiki]:        http://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+[kisswiki]:       http://en.wikipedia.org/wiki/KISS_principle
+[ocpwiki]:        http://en.wikipedia.org/wiki/Open_Closed_Principle
+[srpwiki]:        http://en.wikipedia.org/wiki/Single_responsibility_principle
+[coupwiki]:       http://en.wikipedia.org/wiki/Coupling_(computer_programming)
 [socwiki]:        http://en.wikipedia.org/wiki/Separation_of_concerns
 [mdncssan]:       https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations
 [mdneffcss]:      https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
@@ -257,3 +302,4 @@ Testing should occur in native, hardware environment, not emulated.
 [bower]:          http://bower.io/
 [npm]:            http://www.npmjs.org/
 [composer]:       https://getcomposer.org/
+[grunt]:          http://gruntjs.com
