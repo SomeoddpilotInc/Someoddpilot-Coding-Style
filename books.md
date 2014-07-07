@@ -8,6 +8,10 @@ We have a bunch of really useful reference books. Ask me if you can't find them.
 * [Code Simplicity](http://shop.oreilly.com/product/0636920022251.do)
 * [Mastering Regular Expressions](http://shop.oreilly.com/product/9780596528126.do)
 
+## VI and VIM
+
+* [Learning the vi and Vim Editors]()
+
 ## UNIX
 
 * [Learning Unix for OS X](http://shop.oreilly.com/product/0636920025870.do)
@@ -24,16 +28,28 @@ We have a bunch of really useful reference books. Ask me if you can't find them.
 
 ## Responsive
 
-* Mobile First
-* Responsive Web Design
+* [Mobile First](http://www.abookapart.com/products/mobile-first)
+* [Responsive Web Design](www.abookapart.com/products/responsive-web-design)
 
 ## Javascript
 
-* Javascript and jQuery: The Missing Manual
-* jQuery Cookbook
-* High Performance JavaScript
-* Developing Backbone.js Applications
-* You Don't Know JS: Scope and Closures
+* [Javascript and jQuery: The Missing Manual](shop.oreilly.com/product/0636920015048.do)
+* [jQuery Cookbook](shop.oreilly.com/product/9780596159788.do)
+* [High Performance JavaScript](shop.oreilly.com/product/9780596802806.do)
+* [You Don't Know JS: Scope and Closures](shop.oreilly.com/product/0636920026327.do)
+* [Learning Javascript Design Patterns](http://shop.oreilly.com/product/0636920025832.do)
+
+## Angular
+
+* [AngularJS](shop.oreilly.com/product/0636920028055.do)
+* [AngularJS Up and Running](http://shop.oreilly.com/product/0636920033486.do)
+* [Dependency Injection with AngularJS](shop.oreilly.com/product/9781782166566.do)
+
+## Node
+
+* [Learning Node](shop.oreilly.com/product/0636920024606.do)
+* [Node for Front-End Developers](shop.oreilly.com/product/0636920023258.do)
+* [Node - Up and Running](shop.oreilly.com/product/0636920015956.do)
 
 ## Graphics
 
