@@ -34,13 +34,66 @@ Minimize the number of dependencies and assumptions for each module.
 
 * [Coupling - Wikipedia](http://en.wikipedia.org/wiki/Coupling_(computer_programming))
 
+## Maximize Cohesion
+
+Similar functionality should be found within the same component.
+
+* [Cohesion - Wikipedia](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
+
+## Hide Implementation Details
+
+Modules should only need to understand the things they affect, avoiding affecting other implementations.
+
+* [Information Hiding - Wikipedia](http://en.wikipedia.org/wiki/Information_Hiding)
+
+## Law of Demeter
+
+Components should only communicate with direct relations. Avoid passing through unused data and chaining communication through modules.
+
+**Bad**
+
+```
+anElement.addEventListener('click', function (event) {
+  doSomething(event);
+});
+
+function doSomething(event) {
+  doSomethingElse(event.target);
+}
+```
+
+**Good**
+
+```
+anElement.addEventListener('click', function (event) {
+  doSomething(event.target);
+});
+
+function doSomething(element) {
+  doSomethingElse(element);
+}
+```
+
+* [Law of Demeter - Wikipedia](http://en.wikipedia.org/wiki/Law_of_Demeter)
+
+## Avoid Premature Optimization
+
+Don't worry about optimization until code is working but slower than needed.
+
+>  "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil"
+<cite>- Donald Knuth</cite>
+
+That being said, there are some
+
+* [Program Optimization - Wikipedia](http://en.wikipedia.org/wiki/Program_optimization)
+
 ## Separation of Concerns
 
 > In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections, such that each section addresses a separate concern.
 
 <cite>&mdash;[Separation of concerns - Wikipedia](http://en.wikipedia.org/wiki/Separation_of_concerns)</cite>
 
-The right things should be done by the right thing in the right place. It sounds at once both intuitive and also like a wicked problem.
+The right things should be done by the right thing in the right place. Modules' responsibilities should overlap as little as possible. It sounds at once both intuitive and also like a wicked problem.
 
 ### CSS
 * Appearance (colors, type)
@@ -119,3 +172,7 @@ Historically Javascript was used to detect window width changes and to apply new
 Use media queries to detect screen widths.
 
 * [CSS media queries - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
+
+## Resources
+
+* [Code Complete - Steve McConnell](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670)
