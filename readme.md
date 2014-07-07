@@ -39,7 +39,7 @@ Use [npm][npm] to install Node.js modules.
 
 Use [composer][composer] to install PHP modules.
 
-### References
+### Reference
 
 * [Package Management - Wikipedia](http://en.wikipedia.org/wiki/Package_management_system)
 
@@ -49,22 +49,40 @@ Use [composer][composer] to install PHP modules.
 
 Code should **always** be linted by the appropriate linter. Sloppy code is dangerous code.
 
-#### References
+#### Reference
 
 * [Lint - Wikipedia](http://en.wikipedia.org/wiki/Lint_(software))
 
-### Simian
+### Similarities
 
-Projects should be run through Simian to find lines of code that are similar. These lines should be refactored.
+#### PHPCPD
+
+PHP projects should be run through [PHP Copy Paste Detector](https://github.com/sebastianbergmann/phpcpd).
+
+#### Simian
+
+Projects should be run through [Simian](http://www.harukizaemon.com/simian/) to find lines of code that are similar. These lines should be refactored.
 
     -excludes={*.sublime-workspace,node_modules,bower_components}
     -includes={**/,}**/*.{js,php,scss,hbs}
     -formatter=plain:simian.txt
     -threshold=4
 
-### Tasks
+#### Reference
 
-All common tasks should be automated and configurable. Use [Grunt][grunt] to create tasks which can be run via the command line or by watching a set of files.
+* [Static program analysis - Wikipedia](http://en.wikipedia.org/wiki/Static_program_analysis)
+
+## Tasks
+
+All common tasks should be automated and configurable.
+
+### Grunt
+
+Use [Grunt][grunt] to create tasks which can be run via the command line or by watching a set of files.
+
+### Reference
+
+* [Build Automation - Wikipedia](http://en.wikipedia.org/wiki/Build_automation)
 
 ## Testing
 
@@ -97,3 +115,9 @@ Testing should occur in native, hardware environment, not emulated.
 [npm]:            http://www.npmjs.org/
 [composer]:       https://getcomposer.org/
 [grunt]:          http://gruntjs.com
+
+#### Reference
+
+* [Unit Testing - Wikipedia](http://en.wikipedia.org/wiki/Unit_testing)
+* [Behaviour Driven Testing - Wikipedia](http://en.wikipedia.org/wiki/Behavior-driven_development)
+* [Test Driven Development - Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development)
