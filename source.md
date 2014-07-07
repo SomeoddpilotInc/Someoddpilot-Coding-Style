@@ -19,6 +19,20 @@ For all private, client work, we track repos with BitBucket. These are projects 
 
 For open source, abstract work, we track repos with Github. These are projects that we have no issue with everyone in the outside world taking a look at.
 
+## Commit
+
+The basic building block of source control is the "commit". A commit is a concrete chunk of changes to the code. Always provide a thoughtful message about what you've changed in a commit. The more information the better.
+
+Only address one issue per commit. Working in multiple areas of the source within one commit makes it hard to parse where changes were made and why.
+
+## Branches
+
+Most projects will have multiple branches. Changes should be made in a `dev` branch where the changes will be tested before being deployed to the `master` branch.
+
+## Sensitive Data
+
+Sensitive data like API keys, passwords, configuration details, etc should never be stored in a repo. A repo could potentially be open sourced, revealing critical implementation details. Including this data in the source also makes deploying in multiple environments difficult.
+
 ## Third Party Code
 
 Due to copyright and other restrictions, third part code should not be source controlled.
