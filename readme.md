@@ -91,7 +91,7 @@ Historically Javascript was used to detect window width changes and to apply new
 
 Use media queries to detect screen widths.
 
-* [CSS media queries - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
+* [CSS media queries - MDN][cssmdn]
 
 ## Conventions
 
@@ -188,13 +188,13 @@ One *Thing*, be it a class, a template, set of CSS styles, should be contained i
 * Otherwise, files should be lowercase with hyphen (`-`) separation between words
 * File modifications like `gz` and `min` should be separated by a dot `.`
 
+### Comments
+
+Comments are reserved for descriptions of functionality, not legacy code. Old, untested code should be removed. It will live on in our hearts and our source control.
+
 ## Linters
 
 Code should **always** be linted by the appropriate linter. Sloppy code is dangerous code.
-
-## Comments
-
-Comments are reserved for descriptions of functionality, not legacy code. Old, untested code should be removed. It will live on in our hearts and our source control.
 
 ## Package management
 
@@ -205,6 +205,10 @@ Use [Bower][bower] to install front end components.
 ### npm
 
 Use [npm][npm] to install Node.js modules.
+
+### Composer
+
+Use [composer][composer] to install PHP modules.
 
 ## Code Analysis
 
@@ -244,6 +248,8 @@ Functionality should be tested in in
 
 Testing should occur in native, hardware environment, not emulated.
 
-[socwiki]: http://en.wikipedia.org/wiki/Separation_of_concerns
-[bower]: http://bower.io/
-[npm]: http://www.npmjs.org/
+[socwiki]:  http://en.wikipedia.org/wiki/Separation_of_concerns
+[bower]:    http://bower.io/
+[npm]:      http://www.npmjs.org/
+[composer]: https://getcomposer.org/
+[cssmdn]:   https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
