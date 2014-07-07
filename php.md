@@ -1,8 +1,6 @@
 # Someoddpilot PHP Style
 
-PHP code should follow all general styles outlined [here](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/readme.md).
-
-PHP code should generally follow the [PEAR coding standards][pearStandards]. These standards provide a good middle ground between readability, conciseness, and stability.
+PHP code should generally follow the [PSR-2 coding standards](http://www.php-fig.org/psr/psr-2/). These standards provide a good middle ground between readability, conciseness, and stability.
 
 #### [PSR-2 Example][psr2Exp]
 
@@ -34,11 +32,13 @@ PHP code should generally follow the [PEAR coding standards][pearStandards]. The
 
 ## Linter
 
-[PHP CodeSniffer][phpCS] is a rock solid linter for PEAR standards.
+[PHP CodeSniffer][phpCS] is a rock solid linter for PHP standards.
 
 [PHP Mess Detector][phpMD] is another vital part of the PHP linting workflow. It tests for unused variables, bugs, suboptimal code, and complicated expressions.
 
-[PHP Coding Standards Fixer][phpCSF] should only be used as a last resort, not a tool. You should write your code to standards and only use this tool when formatting legacy code.
+[PHP Copy Paste Detector](https://github.com/sebastianbergmann/phpcpd) looks for portions of PHP code which are highly similar and candidates for refactoring.
+
+[PHP Coding Standards Fixer][phpCSF] should only be used as a last resort, not a frequent tool. You should write your code to standards and only use this tool when formatting legacy code.
 
 ## Environments
 
@@ -122,7 +122,6 @@ A RESTful API for accessing posts and taxonomies.
 
 The API makes many common AJAX tasks incredibly easy without dealing with the mess of wp_ajax_actions.
 
- [pearStandards]: http://pear.php.net/manual/en/standards.php
  [psr2Exp]: http://www.php-fig.org/psr/psr-2/
  [phpCS]: http://pear.php.net/package/PHP_CodeSniffer/
  [phpMD]: http://phpmd.org/
