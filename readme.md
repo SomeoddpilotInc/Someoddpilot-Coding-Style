@@ -12,6 +12,10 @@ Some basic principals apply to all programming, regardless of language.
 
 Some basic conventions apply across all languages.
 
+## [Source Control](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/source.md)
+
+All code should be source controlled.
+
 ## Workflow
 
 * [Front End Workflow](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/front.md)
