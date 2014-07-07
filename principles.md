@@ -119,3 +119,15 @@ Historically Javascript was used to detect window width changes and to apply new
 Use media queries to detect screen widths.
 
 * [CSS media queries - MDN][cssmdn]
+
+[drywiki]:        http://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+[kisswiki]:       http://en.wikipedia.org/wiki/KISS_principle
+[ocpwiki]:        http://en.wikipedia.org/wiki/Open_Closed_Principle
+[srpwiki]:        http://en.wikipedia.org/wiki/Single_responsibility_principle
+[coupwiki]:       http://en.wikipedia.org/wiki/Coupling_(computer_programming)
+[socwiki]:        http://en.wikipedia.org/wiki/Separation_of_concerns
+[mdncssan]:       https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations
+[mdneffcss]:      https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
+[fbcriticalpath]: http://www.feedthebot.com/pagespeed/critical-render-path.html
+[gfcriticalpath]: https://developers.google.com/web/fundamentals/performance/critical-rendering-path
+[cssmdn]:         https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
