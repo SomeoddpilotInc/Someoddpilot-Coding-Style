@@ -8,37 +8,37 @@ Do something once. Grin and bear it when you do it again. If you do it three tim
 
 Use loops, functions, classes, etc to avoid repetition.
 
-* [DRY - Wikipedia][drywiki]
+* [DRY - Wikipedia](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
 ## KISS (Keep it simple, stupid)
 
 Avoid complexity. Simpler methods, classes, etc make code easier to understand, abstract, and modify. Make things as simple as they need to be.
 
-* [KISS - Wikipedia][kisswiki]
+* [KISS - Wikipedia](http://en.wikipedia.org/wiki/KISS_principle)
 
 ## Open/Closed Principle
 
 Things should be extendable, but not directly modifiable. Create abstracted things with interfaces that can be modified later.
 
-* [Open Closed Principal - Wikipedia][ocpwiki]
+* [Open Closed Principal - Wikipedia](http://en.wikipedia.org/wiki/Open_Closed_Principle)
 
 ## Single Responsibility Principle
 
 Each thing, be it a class or a method, should do one task and do it well.
 
-* [Single Responsibility Principle - Wikipedia][srpwiki]
+* [Single Responsibility Principle - Wikipedia](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 
 ## Loose Coupling
 
 Minimize the number of dependencies and assumptions for each module.
 
-* [Coupling - Wikipedia][coupwiki]
+* [Coupling - Wikipedia](http://en.wikipedia.org/wiki/Coupling_(computer_programming))
 
 ## Separation of Concerns
 
 > In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections, such that each section addresses a separate concern.
 
-<cite>&mdash;[Separation of concerns - Wikipedia][socwiki]</cite>
+<cite>&mdash;[Separation of concerns - Wikipedia](http://en.wikipedia.org/wiki/Separation_of_concerns)</cite>
 
 The right things should be done by the right thing in the right place. It sounds at once both intuitive and also like a wicked problem.
 
@@ -71,7 +71,7 @@ Javascript should not be used to modify appearance directly. This appies to temp
 
 Instead of changing style properties directly, classes should be applied and removed to change graphical states.
 
-* [Using CSS Animations - MDN][mdncssan]
+* [Using CSS Animations - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
 
 #### Element Selectors
 
@@ -83,7 +83,7 @@ CSS and Javascript allow a wide variety of element selectors, some of which perf
 
 CSS and jQuery selectors should be tag agnostic. This allows flexibility in reuse by adding a class to any tag.
 
-* [Writing Efficient CSS - MDN][mdneffcss]
+* [Writing Efficient CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
 
 #### Tables
 
@@ -105,8 +105,8 @@ Traditionally Javascript modules or "scripts" were loaded by inserting a `<scrip
 
 Javascript modules should be loaded asynchronously, specifying their dependencies. Use the `async` attribute and requirejs. Asynchronious loading allows more intelligent dependencie management and encapsulation.
 
-* [Critical Rendering Path - Feed the Bot][fbcriticalpath]
-* [Critical Rendering Path - Google Fundamentals][gfcriticalpath]
+* [Critical Rendering Path - Feed the Bot](http://www.feedthebot.com/pagespeed/critical-render-path.html)
+* [Critical Rendering Path - Google Fundamentals](https://developers.google.com/web/fundamentals/performance/critical-rendering-path)
 
 #### Responsive Styling
 
@@ -118,16 +118,4 @@ Historically Javascript was used to detect window width changes and to apply new
 
 Use media queries to detect screen widths.
 
-* [CSS media queries - MDN][cssmdn]
-
-[drywiki]:        http://en.wikipedia.org/wiki/Don%27t_repeat_yourself
-[kisswiki]:       http://en.wikipedia.org/wiki/KISS_principle
-[ocpwiki]:        http://en.wikipedia.org/wiki/Open_Closed_Principle
-[srpwiki]:        http://en.wikipedia.org/wiki/Single_responsibility_principle
-[coupwiki]:       http://en.wikipedia.org/wiki/Coupling_(computer_programming)
-[socwiki]:        http://en.wikipedia.org/wiki/Separation_of_concerns
-[mdncssan]:       https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations
-[mdneffcss]:      https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
-[fbcriticalpath]: http://www.feedthebot.com/pagespeed/critical-render-path.html
-[gfcriticalpath]: https://developers.google.com/web/fundamentals/performance/critical-rendering-path
-[cssmdn]:         https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
+* [CSS media queries - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
