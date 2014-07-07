@@ -9,6 +9,10 @@
 
 ## Separation of Concerns
 
+> In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections, such that each section addresses a separate concern.
+
+<cite>&mdash;[Separation of concerns - Wikipedia][socwiki]</cite>
+
 The right things should be done by the right thing in the right place. It sounds at once both intuitive and also like a wicked problem.
 
 ### CSS
@@ -18,25 +22,70 @@ The right things should be done by the right thing in the right place. It sounds
 * Animation
 
 ### Javascript
-* Interactive behavior
+* Changing state
+* Querying data
 * Feature detection
 * Progressive enhancement
 * Loading dependencies
 
-### PHP
+### Serverside
 * Bootstrapping content and data
+* Storing content and data
 
 ### Anti-patterns
 
-Javascript should not be used to modify appearance directly. This affects temporarily applied styles and animations. Historically jQuery was used to animate and add style properties. With widespread availability of CSS3 transitions and animations, these CSS level appearance changes should be used as much as possible.
+#### Using Javascript to affect appearance
+
+**Problem**
+
+Javascript should not be used to modify appearance directly. This appies to temporarily applied styles and animations. Historically libraries like jQuery were used to animate and add style properties. With widespread availability of CSS3 transitions and animations, these CSS level appearance changes should be used as much as possible.
+
+**Solution**
+
+Instead of changing style properties directly, classes should be applied and removed to change graphical states.
+
+#### Element Selectors
+
+**Problem**
+
+CSS and Javascript allow a wide variety of element selectors, some of which perform poorly, make modularity impossible, or are not widely supported.
+
+**Solution**
 
 CSS and jQuery selectors should be tag agnostic. This allows flexibility in reuse by adding a class to any tag.
 
-Tables should be used only for tabular data. Use of tables for other data is highly opinionated and makes restyling highly difficult.
+#### Tables
 
-Javascript modules should be loaded asynchronously, specifying their dependencies. Historically scripts were loaded through multiple script tags. This historical approach makes assumptions that the correct dependencies will be loaded and without error before execution. Asynchronious loading allows more intelligent dependencie management and encapsulation.
+**Problem**
 
-Responsive styling should be done entirely via CSS. Historically Javascript was used to detect window width changes and to apply new styles.
+Historically, tables were used to create layouts due styling restrictions. However, their layout for data other than tabular data is highly opinionated and makes restyling highly difficult.
+
+**Solution**
+
+Tables should be used only for tabular data.
+
+#### Loading Javascript Synchronously
+
+**Problem**
+
+Traditionally Javascript modules or "scripts" were loaded by inserting a `<script>` element into the page's `head` or `body`. This blocks loading and rendering of other page elements, slowing down the initial load and rendering of a page. This approach makes assumptions that the correct dependencies will be loaded and without error before execution.
+
+**Solution**
+
+Javascript modules should be loaded asynchronously, specifying their dependencies. Use the `async` attribute and requirejs. Asynchronious loading allows more intelligent dependencie management and encapsulation.
+
+* [Critical Rendering Path - Feed the Bot](http://www.feedthebot.com/pagespeed/critical-render-path.html)
+* [Critical Rendering Path - Google Fundamentals](https://developers.google.com/web/fundamentals/performance/critical-rendering-path)
+
+#### Responsive Styling
+
+**Problem**
+
+Historically Javascript was used to detect window width changes and to apply new styles. The Javascript used to apply these styles cannot be run until the page is fully loaded, causing a flash of improperly styled content.
+
+**Solution**
+
+Use media queries to detect screen widths.
 
 Content should always be sent with the initial HTML. Search engines and other audiences cannot always access content loaded via an interactive layer. Content should only be updated via Javascript, not initially loaded.
 
@@ -138,5 +187,6 @@ Functionality should be tested in in
 
 Testing should occur in native, hardware environment, not emulated.
 
+[socwiki]: http://en.wikipedia.org/wiki/Separation_of_concerns
 [bower]: http://bower.io/
 [npm]: http://www.npmjs.org/
