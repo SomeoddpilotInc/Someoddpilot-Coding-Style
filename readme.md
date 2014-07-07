@@ -44,7 +44,7 @@ Javascript should not be used to modify appearance directly. This appies to temp
 
 Instead of changing style properties directly, classes should be applied and removed to change graphical states.
 
-* [Using CSS Animations - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
+* [Using CSS Animations - MDN][mdncssan]
 
 #### Element Selectors
 
@@ -56,7 +56,7 @@ CSS and Javascript allow a wide variety of element selectors, some of which perf
 
 CSS and jQuery selectors should be tag agnostic. This allows flexibility in reuse by adding a class to any tag.
 
-* [Writing Efficient CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
+* [Writing Efficient CSS - MDN][mdneffcss]
 
 #### Tables
 
@@ -78,8 +78,8 @@ Traditionally Javascript modules or "scripts" were loaded by inserting a `<scrip
 
 Javascript modules should be loaded asynchronously, specifying their dependencies. Use the `async` attribute and requirejs. Asynchronious loading allows more intelligent dependencie management and encapsulation.
 
-* [Critical Rendering Path - Feed the Bot](http://www.feedthebot.com/pagespeed/critical-render-path.html)
-* [Critical Rendering Path - Google Fundamentals](https://developers.google.com/web/fundamentals/performance/critical-rendering-path)
+* [Critical Rendering Path - Feed the Bot][fbcriticalpath]
+* [Critical Rendering Path - Google Fundamentals][gfcriticalpath]
 
 #### Responsive Styling
 
@@ -248,8 +248,12 @@ Functionality should be tested in in
 
 Testing should occur in native, hardware environment, not emulated.
 
-[socwiki]:  http://en.wikipedia.org/wiki/Separation_of_concerns
-[bower]:    http://bower.io/
-[npm]:      http://www.npmjs.org/
-[composer]: https://getcomposer.org/
-[cssmdn]:   https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
+[socwiki]:        http://en.wikipedia.org/wiki/Separation_of_concerns
+[mdncssan]:       https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations
+[mdneffcss]:      https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
+[fbcriticalpath]: http://www.feedthebot.com/pagespeed/critical-render-path.html
+[gfcriticalpath]: https://developers.google.com/web/fundamentals/performance/critical-rendering-path
+[cssmdn]:         https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
+[bower]:          http://bower.io/
+[npm]:            http://www.npmjs.org/
+[composer]:       https://getcomposer.org/
