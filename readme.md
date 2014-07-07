@@ -1,5 +1,7 @@
 # Someoddpilot Coding Style
 
+## [Practices](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/practices.md)
+
 ## Principles
 
 Some basic principals apply to all programming, regardless of language.
