@@ -1,0 +1,99 @@
+# Someoddpilot Coding Style
+
+## Principles
+
+Some basic principals apply to all programming, regardless of language.
+
+[Basic Programming Principles](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/principles.md)
+
+## Conventions
+
+Some basic conventions apply across all languages.
+
+[Conventions](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/conventions.md)
+
+## Languages
+
+* [PHP](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/php.md)
+* [Javascript](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/javascript.md)
+* [HTML](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/html.md)
+* [CSS](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/css.md)
+
+## Package management
+
+Package managers allows automation of the installation process of tools and libraries. This installation process can then be repeated easily as the code base is changed, pushed to other developers, and ultimately deployed.
+
+Third party code should never be included in the source of a project and instead be managed via a package.
+
+First party code should be abstracted into a package when feasible.
+
+### Bower
+
+Use [Bower][bower] to install front end components.
+
+### npm
+
+Use [npm][npm] to install Node.js modules.
+
+### Composer
+
+Use [composer][composer] to install PHP modules.
+
+### References
+
+* [Package Management - Wikipedia](http://en.wikipedia.org/wiki/Package_management_system)
+
+## Code Analysis
+
+### Linters
+
+Code should **always** be linted by the appropriate linter. Sloppy code is dangerous code.
+
+#### References
+
+* [Lint - Wikipedia](http://en.wikipedia.org/wiki/Lint_(software))
+
+### Simian
+
+Projects should be run through Simian to find lines of code that are similar. These lines should be refactored.
+
+    -excludes={*.sublime-workspace,node_modules,bower_components}
+    -includes={**/,}**/*.{js,php,scss,hbs}
+    -formatter=plain:simian.txt
+    -threshold=4
+
+### Tasks
+
+All common tasks should be automated and configurable. Use [Grunt][grunt] to create tasks which can be run via the command line or by watching a set of files.
+
+## Testing
+
+### Unit Testing
+
+Significan modules should always be unit tested. Unit tests provide a quickly repeatable way to automatically test functionality and prevent newer code from interfering with previous code.
+
+#### Behavior Driven
+
+Interactive modules should be tested with behavior driven tests to ensure that interactivity is functional in all environments through all stages of development.
+
+#### Test Driven
+
+Modules with complex, custom CRUD operations or calculations should be developed using test driven fundamentals.
+
+### Browser Testing
+
+Functionality should be tested in in
+
+* Safari (Latest)
+* Chrome (Latest)
+* Mozilla (Latest)
+* iOS (Latest)
+* Android (Latest)
+* IE (Latest, 8)
+
+Testing should occur in native, hardware environment, not emulated.
+
+[bower]:          http://bower.io/
+[npm]:            http://www.npmjs.org/
+[composer]:       https://getcomposer.org/
+[grunt]:          http://gruntjs.com
