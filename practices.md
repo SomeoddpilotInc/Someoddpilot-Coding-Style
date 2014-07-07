@@ -1,5 +1,17 @@
 # Practices
 
+## Prerequisites
+
+A list of prerequisites should be written before development.
+
+The prerequisites should outline:
+
+* Development structure
+* Functionality
+* Architecture (file structure)
+* Detailed design of components (front end modules, back end modules, plugin integration)
+* Environment (Wordpress, Node.js, static)
+
 ## Pair Programming
 
 ### Reference
