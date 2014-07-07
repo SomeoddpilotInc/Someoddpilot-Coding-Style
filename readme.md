@@ -29,15 +29,15 @@ First party code should be abstracted into a package when feasible.
 
 ### Bower
 
-Use [Bower][bower] to install front end components.
+Use [Bower](http://bower.io/) to install front end components.
 
 ### npm
 
-Use [npm][npm] to install Node.js modules.
+Use [npm](http://www.npmjs.org/) to install Node.js modules.
 
 ### Composer
 
-Use [composer][composer] to install PHP modules.
+Use [composer](https://getcomposer.org/) to install PHP modules.
 
 ### Reference
 
@@ -78,7 +78,7 @@ All common tasks should be automated and configurable.
 
 ### Grunt
 
-Use [Grunt][grunt] to create tasks which can be run via the command line or by watching a set of files.
+Use [Grunt](http://gruntjs.com) to create tasks which can be run via the command line or by watching a set of files.
 
 ### Reference
 
@@ -110,11 +110,6 @@ Functionality should be tested in in
 * IE (Latest, 8)
 
 Testing should occur in native, hardware environment, not emulated.
-
-[bower]:          http://bower.io/
-[npm]:            http://www.npmjs.org/
-[composer]:       https://getcomposer.org/
-[grunt]:          http://gruntjs.com
 
 #### Reference
 
