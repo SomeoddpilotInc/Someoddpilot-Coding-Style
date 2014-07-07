@@ -83,8 +83,6 @@ Don't worry about optimization until code is working but slower than needed.
 >  "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil"
 <cite>- Donald Knuth</cite>
 
-That being said, there are some
-
 * [Program Optimization - Wikipedia](http://en.wikipedia.org/wiki/Program_optimization)
 
 ## Separation of Concerns
@@ -108,7 +106,7 @@ The right things should be done by the right thing in the right place. Modules' 
 * Progressive enhancement
 * Loading dependencies
 
-### Serverside
+### Server Side
 * Bootstrapping content and data
 * Storing content and data
 
