@@ -111,6 +111,19 @@ There MUST NOT be trailing whitespace at the end of non-blank lines.
 
 There MUST NOT be more than one statement per line.
 
+**Good**
+
+```
+doSomething();
+doSomethingElse();
+```
+
+**Bad**
+
+```
+doSomething();doSomethingElse();
+```
+
 ### Control Structures
 
 Control structures must follow certain standards. These standards increase readability and comprehension. The general style rules for control structures are as follows:
@@ -142,6 +155,30 @@ Avoid using `else` statements where possible by using returns. This decreases th
 
 * Class names MUST be declared in `StudlyCaps`.
 * Method names MUST be declared in `camelCase`.
+
+**Good**
+
+```
+class Example
+{
+    public function doSomething()
+    {
+      ...
+    }
+}
+```
+
+**Bad**
+
+```
+class example
+{
+    public function do_something()
+    {
+      ...
+    }
+}
+```
 
 ### File Structure
 
