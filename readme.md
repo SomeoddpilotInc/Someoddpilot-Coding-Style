@@ -44,6 +44,8 @@ Javascript should not be used to modify appearance directly. This appies to temp
 
 Instead of changing style properties directly, classes should be applied and removed to change graphical states.
 
+* [Using CSS Animations - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
+
 #### Element Selectors
 
 **Problem**
@@ -53,6 +55,8 @@ CSS and Javascript allow a wide variety of element selectors, some of which perf
 **Solution**
 
 CSS and jQuery selectors should be tag agnostic. This allows flexibility in reuse by adding a class to any tag.
+
+* [Writing Efficient CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
 
 #### Tables
 
@@ -87,17 +91,11 @@ Historically Javascript was used to detect window width changes and to apply new
 
 Use media queries to detect screen widths.
 
-Content should always be sent with the initial HTML. Search engines and other audiences cannot always access content loaded via an interactive layer. Content should only be updated via Javascript, not initially loaded.
-
-## Quotes
-
-You should generally use a double quote for strings:
-
-    var stringVar = "this is a string";
+* [CSS media queries - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
 
 ## Tabs
 
-Code MUST use 4 spaces for indenting tabs. This increases readability through visual contrast between nested levels.
+Code MUST use 2 spaces for indenting tabs.
 
 ## Line length
 
