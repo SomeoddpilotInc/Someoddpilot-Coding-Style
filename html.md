@@ -56,6 +56,44 @@ Unstructured content is content created by loose controls by the user. The input
 
 Only predictable selectors (`a`, `h{1-6}`, `strong`, `em`, etc) should be used for styling. If classes can also be predicted, these should be used, but with care.
 
+### In Practice
+
+**Bad**
+
+This HTML is bad because:
+
+* Elements&rsquo; roles are ambigeous
+* Unstructured content is hard to select and style
+
+```
+<div>
+  <header>
+    <h1>Title</h1>
+  </header>
+  <p>Lorem ipsum</p>
+</div>
+```
+
+**Good**
+
+This HTML is good because:
+
+* Element&rsquo; roles are clearly defined by classes
+* Unstructured content is contained allowing loose targeting
+
+```
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      Title
+    </h1>
+  </header>
+  <div class="post-content">
+    <p>Lorem ipsum</p>
+  </div>
+</div>
+```
+
 ### Reference
 
 * [Critical Rendering Path - Feed the Bot](http://www.feedthebot.com/pagespeed/critical-render-path.html)
