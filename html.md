@@ -78,7 +78,7 @@ This HTML is bad because:
 
 This HTML is good because:
 
-* Element&rsquo; roles are clearly defined by classes
+* Elements&rsquo; roles are clearly defined by classes
 * Unstructured content is contained allowing loose targeting
 
 ```
