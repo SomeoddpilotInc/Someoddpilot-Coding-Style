@@ -38,7 +38,23 @@ jQuery('.alert-on-click').click(function () {
 
 ## Inline Blocks
 
-Inline style and script blocks should only be used for critical rendering path operations. Inline style and script blocks block rendering, forcing the browser to wait until they are loaded. These critical elements should only be used for critical styles and functions.
+Inline style and script blocks should only be used for critical rendering path operations. Inline style and script blocks block rendering, forcing the browser to wait until they are loaded. These critical elements should only be used for critical styles and functions. The contents of these blocks should be created by importing the contents of a file, not directly coded into a view file.
+
+## Structure
+
+There are two types of content in contemporary HTML: structured and unstructured. Different strategies should be applied to these two approaches to structure.
+
+### Structured Content
+
+Structured content is created using granular data in a predictable, programmed manner. The input for this data would be separated into multiple inputs, retaining each piece of critical data in an individual field. The resulting output structure can be predicted throroughly and thus be very well structured.
+
+Classes should be used frequently both as a semantic labeling device and for styling.
+
+### Unstructured Content
+
+Unstructured content is content created by loose controls by the user. The input for this data could be a text field, a WYSIWYG editor, or another form of input. The structure of the content is highly irregular and indeterminate. While it may be possible to predict the types of things that could occur in the content, the order and organization of the content should be considered unknown.
+
+Only predictable selectors (`a`, `h{1-6}`, `strong`, `em`, etc) should be used for styling. If classes can also be predicted, these should be used, but with care.
 
 ### Reference
 
