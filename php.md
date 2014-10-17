@@ -2,39 +2,41 @@
 
 PHP code should follow all general styles outlined [here](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/readme.md).
 
-PHP code should generally follow the [PEAR coding standards][pearStandards]. These standards provide a good middle ground between readability, conciseness, and stability.
+PHP code should generally follow the [PSR 4][psr4Standards]. These standards provide a good middle ground between readability, conciseness, and stability.
 
 #### [PSR-2 Example][psr2Exp]
 
-    <?php
-    namespace Vendor\Package;
+```
+<?php
+namespace Vendor\Package;
 
-    use FooInterface;
-    use BarClass as Bar;
-    use OtherVendor\OtherPackage\BazClass;
+use FooInterface;
+use BarClass as Bar;
+use OtherVendor\OtherPackage\BazClass;
 
-    class Foo extends Bar implements FooInterface
+class Foo extends Bar implements FooInterface
+{
+    public function sampleFunction($a, $b = null)
     {
-        public function sampleFunction($a, $b = null)
-        {
-            if ($a === $b) {
-                bar();
-            } elseif ($a > $b) {
-                $foo->bar($arg1);
-            } else {
-                BazClass::bar($arg2, $arg3);
-            }
-        }
-
-        final public static function bar()
-        {
-            // method body
+        if ($a === $b) {
+            bar();
+        } elseif ($a > $b) {
+            $foo->bar($arg1);
+        } else {
+            BazClass::bar($arg2, $arg3);
         }
     }
 
+    final public static function bar()
+    {
+        // method body
+    }
+}
+```
+
 ## Linter
 
-[PHP CodeSniffer][phpCS] is a rock solid linter for PEAR standards.
+[PHP CodeSniffer][phpCS] is a rock solid linter for PHP standards.
 
 [PHP Mess Detector][phpMD] is another vital part of the PHP linting workflow. It tests for unused variables, bugs, suboptimal code, and complicated expressions.
 
@@ -56,6 +58,16 @@ Wordpress has its own recommended coding standards for PHP. Some of these are sp
 
 DO NOT FOLLOW THIS STANDARD. It leads to wide, over-readable code. Your lines should be simple enough that they are readable without inflating them with spaces.
 
+Good
+```
+$variable = (empty($foo)) ? $bar->baz('woo') : array();
+```
+
+Bad
+```
+$variable = ( empty( $foo ) ) ? $bar->baz( 'woo' ) : array ();
+```
+
 #### Naming Conventions
 
 > Use lowercase letters in variable, action, and function names (never camelCase). Separate words via underscores.
@@ -63,6 +75,16 @@ DO NOT FOLLOW THIS STANDARD. It leads to wide, over-readable code. Your lines sh
 > <cite>&ndash; [make.wordpress.com][makeWpName]</cite>
 
 DO NOT FOLLOW THIS STANDARD. It goes against most good coding standards. Underscore use inflates line length and provides little more readability than camel or studly case.
+
+Good
+```
+$theVariable = $anInstance->someMethod();
+```
+
+Bad
+```
+$the_variable = $an_instance->some_method();
+```
 
 #### Yoda Conditions
 
@@ -78,9 +100,9 @@ The jury is out on enqueuing. Its a great practice as a baseline, but interferes
 
 #### Templating
 
-Templates should have no variables in their scope. Instead, encapsulate logic in a function.
+Wordpress provides no standard method of templating.
 
-Template parts should always be separated out into a separate template part for reuse in other templates.
+[Timber][timber] provides an excellent solution of interfacing Symfony's [Twig][twig] with Wordpress.
 
 #### Plugins
 
