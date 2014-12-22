@@ -12,7 +12,7 @@ The method of text input on the command line and the accompanying feeling of ove
 A fantastic text editor is just three characters away
 -----------------------------------------------------
 
-OS X, like most `*NIX` environments, comes with the phenomenal text editor `vim`. Vim allows for fast, repeatable text editing using modes. These modes can be confusing at first, but you will quickly grow to appreciate the level of power and command they offer. If you're interested in learning the basics of Vim, checkout [openvim.com](http://www.openvim.com/).
+OS X, like most `*nix` environments, comes with the phenomenal text editor `vim`. Vim allows for fast, repeatable text editing using modes. These modes can be confusing at first, but you will quickly grow to appreciate the level of power and command they offer. If you're interested in learning the basics of Vim, checkout [openvim.com](http://www.openvim.com/).
 
 To use vim to edit a file, run `vim <filename>`.
 
