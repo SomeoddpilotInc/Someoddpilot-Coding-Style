@@ -132,6 +132,12 @@ Testing should occur in native, hardware environment, not emulated.
 * [Behaviour Driven Testing - Wikipedia](http://en.wikipedia.org/wiki/Behavior-driven_development)
 * [Test Driven Development - Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development)
 
+## Kaizen
+
+We’re constantly changing and improving how we get things done in the codebase. Often times that means ***this*** documentation falls behind our actual process. Please fork it and update it!
+
+Additionally, if you can identify an area where we could better handle a process, bring the issue to the table and we figure out how to keep things running smoothly for everyone.
+
 ## [Reference](https://github.com/alexsomeoddpilot/Someoddpilot-Coding-Style/blob/master/books.md)
 
 We have tons of books on programming. Talk to me and I'll find what you're looking for.
