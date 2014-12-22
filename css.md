@@ -55,7 +55,11 @@ Expect users to not always have the shiniest, latest features. Provide a stable,
 
 Use Modernizr's classes to detect features when available.
 
- [compass]: compass-style.org
+## Reference
+
+* [Google’s CSS Style Guide](https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+* [Wordpress’ CSS Style Guide](http://make.wordpress.org/core/handbook/coding-standards/css/)
+
  [cssLint]: http://csslint.net/about.html
  [cssLintID]: https://github.com/stubbornella/csslint/wiki/Disallow-IDs-in-selectors
  [wpCSS]: http://make.wordpress.org/core/handbook/coding-standards/css/#property-ordering
