@@ -34,3 +34,18 @@ Install Node.js
 Again, all you'll need to do to install Node is run a Homebrew command:
 
 `brew install node`
+
+Install EditorConfig
+--------------------
+
+[EditorConfig](http://editorconfig.org/) manages basic coding styles between different editors used by different team members.
+
+Once again, we’ll install this with Homebrew.
+
+`brew install editorconfig`
+
+Be sure to install the EditorConfig plugin for your editor:
+
+* [EditorConfig for Sublime](https://github.com/sindresorhus/editorconfig-sublime)
+* [EditorConfig for Vim](https://github.com/editorconfig/editorconfig-vim)
+* [EditorConfig for Emacs](https://github.com/editorconfig/editorconfig-emacs)
