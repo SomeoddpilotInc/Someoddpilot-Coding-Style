@@ -47,17 +47,17 @@ Code should always be tested for correct functionality and performance before st
 Work should flow in this pattern:
 
 ```
-Plan-------|
-  |      | |
-Test --| | |
-  |    | | |
-Build -| | |
-  |      | |
-Verify --| |
-  |        |
+Plan <-----
+  V      ^ ^
+Test <-  | |
+  V    ^ | |
+Build >  | |
+  V      | |
+Verify ->  |
+  V        |
 Stage      |
-  |        |
-Approve----|
-  |
+  V        |
+Approve--->
+  V
 Production
 ```
