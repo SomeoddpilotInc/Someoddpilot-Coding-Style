@@ -73,3 +73,14 @@ Be sure to install the plugin for your editor:
 
 * [SublimeLinter ESLint](https://github.com/roadhump/SublimeLinter-eslint)
 * [Syntastic for Vim](https://github.com/scrooloose/syntastic)
+
+Install Gulp
+------------
+
+[Gulp](http://gulpjs.com/) is a streaming build system which allows predictable and repeatable build processes.
+
+Gulp can be install via npm.
+
+`npm install gulp -g`
+
+To run a gulp task, run `gulp <taskname>`
