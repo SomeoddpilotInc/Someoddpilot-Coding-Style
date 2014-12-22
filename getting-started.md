@@ -8,6 +8,16 @@ The terminal is your friend! OS X comes with the Terminal application (which you
 
 The method of text input on the command line and the accompanying feeling of overwhelming power can be hard to work with at first, but try to push yourself to do more and more from the command line. You should quickly find it to be flexible and significantly faster than clicking through GUIs.
 
+
+A fantastic text editor is just three characters away
+-----------------------------------------------------
+
+OS X, like most `*NIX` environments, comes with the phenomenal text editor `vim`. Vim allows for fast, repeatable text editing using modes. These modes can be confusing at first, but you will quickly grow to appreciate the level of power and command they offer. If you're interested in learning the basics of Vim, checkout [openvim.com](http://www.openvim.com/).
+
+To use vim to edit a file, run `vim <filename>`.
+
+If you plan to use Vim as your primary text editor, you should install [Vundle](https://github.com/gmarik/Vundle.vim), a package manager for Vim. It makes it very easy to install and update Vim plugins.
+
 Install Homebrew
 ----------------
 
