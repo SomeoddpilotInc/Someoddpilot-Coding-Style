@@ -41,3 +41,11 @@ Copyrighted and licensed material includes:
 * Wordpress Plugins
 * Webfonts
 * Icon fonts
+
+### Vendor Libraries
+
+Package managers install dependencies into specific directories. These packages are often intended to be used in the development process, not to be included in consuming repos. These directories can be quite large (A npm `node_modules` directory is usually around 30mb!). Packages are managed to avoid having to commit and keep track of changes to dependencies.
+
+* node_modules (npm)
+* vendor (compsoer)
+* bower_components (bower)
