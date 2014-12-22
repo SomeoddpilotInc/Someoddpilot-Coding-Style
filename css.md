@@ -12,16 +12,6 @@ Classes should be hyphen deliminated (e.g. `.foo-bar` not `.foo_bar` or `.fooBar
 
 CSS should not be handwritten. It should be preprocessed through [Stylus](http://learnboost.github.io/stylus/) to increase reusabliity, abstraction, and conciseness.
 
-## Bootstrap
-
-The [Twitter Bootstrap 3.0][bootstrap] forms the base of our styling providing great, up to date boilerplate styling which is easy to mold and adapt.
-
-Bootstrap's style should be extended using the [SASS port][bootstrapSass].
-
-## Compass
-
-We are experimenting with [Compass][compass] for providing great useful mixins and processing functions. Use it!
-
 ## Property ordering
 
 Wordpress has [good standards][wpCSS] for this. Properties should be in this general order:
