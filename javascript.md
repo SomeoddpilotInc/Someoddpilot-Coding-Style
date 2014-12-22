@@ -12,19 +12,17 @@ What is jQuery?
 
 What is jQuery not?
 
-jQuery is not a utility for general Javascript patterns. Use it for what it is good for, but leave the rest to more approriate libraries.
+* a utility for general Javascript patterns
+* a good animation library
+* a solid framework for a rich, layered, modular application
 
-## Underscore
+## Underscore and Lodash
 
 Underscore is a great, functional Javascript library. It provides cross browser methods for many future improvements to Javascript.
 
 [Docs][underscore]
 
-## Backbone
-
-Backbone is our go to library for MV* pattern Javascript.
-
-[Docs][backbone]
+Lodash is Underscore's more elegant, improved descendant. In most every case, it can be dropped in as a replacement.
 
 ## Linter
 
@@ -32,21 +30,17 @@ Backbone is our go to library for MV* pattern Javascript.
 
 JSHint provides [a good starting point][jshintDefaults] for a defaults file.
 
-## AMD
+## Modularity
 
 Javascript compontents should be written in a modular fashion. Dependencies should be clear and variables and functions should be encapsulated.
 
 * [Lightweight jQuery Plugin Start](https://github.com/jquery-boilerplate/jquery-patterns/blob/master/patterns/jquery.basic.plugin-boilerplate.js)
 
-Modules should be loaded when required by the scripts they depend on. We use [RequireJS][requirejs] to load our dependencies.
+Modules should be loaded when required by the scripts they depend on. We use [Browserify][browserify] to compile and concatenate dependencies into a single package.
 
 ## Minification
 
 All Javascript code should be built with the expectation that it will be minified before being deployed.
-
-## Concatenization
-
-Currently we are using Require.js for managing dependencies and loading Javascript files. Projects should be optimized using the [RequireJS optimization tools][requirejsOptim] prior to deployment. These tools will combine scripts into discrete, minified packages.
 
 ## Bower
 
@@ -58,7 +52,7 @@ Files for front end Javascript modules should be installed via [Bower][bower]. B
 
 ## npm
 
-[npm][npm] is ~~a~~ the Node.js package manager.
+[npm][npm] is the standard Node.js package manager. It provides an excellent way to install and manage Javascript packages.
 
 ## Grunt
 
@@ -78,32 +72,27 @@ We use Jasmine for our Javascript unit testing.
 
 Standard, widely used libraries like jQuery, Backbone, and Underscore are available for enqueueing from the Wordpress core. These must absolutely be enqueued using the standard arguments. Plugins and core functionality expects these scripts to be loaded and configured in a particular manner.
 
-Custom scripts can be loaded either through enqueueing or through an AMD system like [RequireJS][requirejs]. We are moving towards using AMD modules as much as possible.
-
-Scripts should be enqueued in the functions file (or one of its required files). Scripts should never be enqueued in templates.
-
 #### Globals
 
 Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized at enqueueing using [wp_localize_script](http://codex.wordpress.org/Function_Reference/wp_localize_script). This is also a useful method for bootstrapping data for Backbone.
 
-    <?php
+```
+wp_register_script('some-handle', 'path/to/myscript.js');
 
-    wp_register_script('some-handle', 'path/to/myscript.js');
+$translation_array = array(
+    'someString' => __('Some string to translate'),
+    'aValue' => '10'
+);
 
-    $translation_array = array(
-        'someString' => __('Some string to translate'),
-        'aValue' => '10'
-    );
+wp_localize_script(
+    'some-handle',
+    'objectName',
+    $translation_array
+);
 
-    wp_localize_script(
-        'some-handle',
-        'objectName',
-        $translation_array
-    );
-
-    // The script can be enqueued now or later.
-    wp_enqueue_script('some-handle');
-    ?>
+// The script can be enqueued now or later.
+wp_enqueue_script('some-handle');
+```
 
 [npm]: https://www.npmjs.org/
 [node]: http://nodejs.org/

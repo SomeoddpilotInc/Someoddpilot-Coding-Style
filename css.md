@@ -14,13 +14,15 @@ CSS should not be handwritten. It should be preprocessed through [Stylus](http:/
 
 ## Property ordering
 
-Wordpress has [good standards][wpCSS] for this. Properties should be in this general order:
+Properties should be in this general order:
 
 * Display
 * Positioning
 * Box model
 * Colors and Typography
 * Other (transitions, animations, translations)
+
+This ordering help clarify how an element relates with other models first, then its more isolated style attributes.
 
 ## Selectors
 
@@ -31,6 +33,15 @@ Always target elements using these techniques in this order:
 
 Do not overqualify selectors. Only use as many selectors as are needed to target the element without over specificity or underspecificity.
 
+Bad
+```
+div#something
+  ...
+
+div.something
+  ...
+```
+
 ### Don't use IDs for style selectors
 
 ID selectors are highly targeted, and should be completely unique. While this might be great at first, elements often need to be resued on a page.
@@ -39,7 +50,7 @@ ID selectors are highly targeted, and should be completely unique. While this mi
 
 ### Don't use descendant selector
 
-The descendant selector is expensive and over qualified. Only use when there is no other way (this is likely in Wordpress wp_nav_menus).
+The descendant selector is expensive and over qualified. If nesting of elements change, this selector will no longer work.
 
 ### Avoid element selector
 

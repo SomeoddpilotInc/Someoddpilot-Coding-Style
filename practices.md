@@ -32,6 +32,32 @@ Two programmers work together at one workstationg. One, the **driver**, writes c
 
 Write code that documents itself. Variables should be descriptive and not ambigeous. Code should be simple and clear.
 
+Document with comments when implementation is ambigeous, but strict documentation is not required.
+
 ### Reference
 
 * [Self-documenting - Wikipedia](http://en.wikipedia.org/wiki/Self-documenting)
+
+## Quality Assurance
+
+Code should always be tested for correct functionality and performance before staging and production.
+
+## Flow
+
+Work should flow in this pattern:
+
+```
+Plan-------|
+  |      | |
+Test --| | |
+  |    | | |
+Build -| | |
+  |      | |
+Verify --| |
+  |        |
+Stage      |
+  |        |
+Approve----|
+  |
+Production
+```

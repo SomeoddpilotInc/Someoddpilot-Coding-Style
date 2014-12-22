@@ -144,7 +144,7 @@ Historically, tables were used to create layouts due styling restrictions. Howev
 
 **Solution**
 
-Tables should be used only for tabular data.
+Tables should be used only for tabular data. Marginally tabular data should be represented via looser tables created using `display: table{-cell,-row}` as this layout can then be easily transformed for smaller breakpoints.
 
 #### Loading Javascript Synchronously
 
