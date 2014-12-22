@@ -41,6 +41,10 @@ ID selectors are highly targeted, and should be completely unique. While this mi
 
 The descendant selector is expensive and over qualified. Only use when there is no other way (this is likely in Wordpress wp_nav_menus).
 
+### Avoid element selector
+
+The element selector is highly tied to a specific use case. Frequently styles will need to be applied to different elements that fulfill different functions.
+
 ## Linter
 
 Use [CSS Lint][cssLint] for linting your CSS.
