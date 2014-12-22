@@ -113,14 +113,14 @@ Modules with complex, custom CRUD operations or calculations should be developed
 
 ### Browser Testing
 
-Functionality should be tested in in
+Functionality should be tested in latest versions of:
 
-* Safari (Latest)
-* Chrome (Latest)
-* Mozilla (Latest)
-* iOS (Latest)
-* Android (Latest)
-* IE (Latest, 8)
+* Safari
+* Chrome
+* Mozilla
+* iOS
+* Android
+* IE
 
 Testing should occur in native, hardware environment, not emulated.
 
