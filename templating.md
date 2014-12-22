@@ -1,10 +1,12 @@
-# Templating
+Templating
+==========
 
-## Logic-less
+Transform, Iterate, Conditional
+-------------------------------
 
-All templates should be logic-less. By design, logic-less templates force you to create abstracted functions which increase reusability, reduce repetition, providing for a better development platform.
+Templates should only transform, iterate over, and respond conditionally to data. By design, restricting templates will force you to create abstracted functions which increase reusability, reduce repetition, and provide for a better development platform.
 
-Logic-less templates also enforce Separation of Concerns. Controllers are forced to "message" data before sending it to the UI. Changing a template will not disturb the formatting of data as it is simply responsible for the structure and output.
+Restricting templates to these functions also enforces Separation of Concerns. Controllers are forced to "massage" data before sending it to the UI. Changing a template will not disturb the formatting of data as it is simply responsible for the structure and output. Similarly, minor changes to how the data is fetch will not affect how it is rendered.
 
 ## Engines
 
