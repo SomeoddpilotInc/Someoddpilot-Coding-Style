@@ -27,7 +27,7 @@ Only address one issue per commit. Working in multiple areas of the source withi
 
 ## Branches
 
-Most projects will have multiple branches. Changes should be made in a `dev` branch where the changes will be tested before being deployed to the `master` branch.
+Most projects will have multiple branches. Changes should be made in a `develop` branch where the changes will be tested before being deployed to the `master` branch.
 
 ## Sensitive Data
 
