@@ -52,9 +52,29 @@ if (condition) {
 
 ```
 if( condition ){ do(something); }
+
+if (condition) do(something);
 ```
 
 Avoid using `else` statements where possible by using returns. This decreases the complexity of functions.
+
+**Okay**
+```
+if (foo) {
+  bar();
+} else {
+  baz();
+}
+```
+
+**Better**
+```
+if (foo) {
+  bar();
+  return;
+}
+baz();
+```
 
 ### Naming
 
@@ -92,6 +112,24 @@ One *Thing*, be it a class, a template, set of CSS styles, should be contained i
 * Files containing classes MUST be named in `StudlyCaps`
 * Otherwise, files should be lowercase with hyphen (`-`) separation between words
 * File modifications like `gz` and `min` should be separated by a dot `.`
+
+### Directory Structure
+
+Discrete modules should be grouped together. Templates, classes, services, factories, etc that are highly linked conceptually should be grouped together in a directory.
+
+```
++-- home
+|   |
+|   + index.html
+|   |
+|   + homeDirective.js
+|
++-- news
+    |
+    + index.html
+    |
+    + newsService.js
+```
 
 ### Comments
 

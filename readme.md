@@ -76,10 +76,12 @@ PHP projects should be run through [PHP Copy Paste Detector](https://github.com/
 
 Projects should be run through [Simian](http://www.harukizaemon.com/simian/) to find lines of code that are similar. These lines should be refactored.
 
-    -excludes={*.sublime-workspace,node_modules,bower_components}
-    -includes={**/,}**/*.{js,php,scss,hbs}
-    -formatter=plain:simian.txt
-    -threshold=4
+```
+-excludes={*.sublime-workspace,node_modules,bower_components}
+-includes={**/,}**/*.{js,php,scss,hbs}
+-formatter=plain:simian.txt
+-threshold=4
+```
 
 #### Reference
 

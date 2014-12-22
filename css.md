@@ -8,19 +8,9 @@ You should follow some general standards:
 
 Classes should be hyphen deliminated (e.g. `.foo-bar` not `.foo_bar` or `.fooBar`).
 
-## SASS (SCSS)
+## Stylus
 
-CSS should not be handwritten. It should be preprocessed through [SASS][sass] to increase reusabliity, abstraction, and conciseness.
-
-## Bootstrap
-
-The [Twitter Bootstrap 3.0][bootstrap] forms the base of our styling providing great, up to date boilerplate styling which is easy to mold and adapt.
-
-Bootstrap's style should be extended using the [SASS port][bootstrapSass].
-
-## Compass
-
-We are experimenting with [Compass][compass] for providing great useful mixins and processing functions. Use it!
+CSS should not be handwritten. It should be preprocessed through [Stylus](http://learnboost.github.io/stylus/) to increase reusabliity, abstraction, and conciseness.
 
 ## Property ordering
 
@@ -51,6 +41,10 @@ ID selectors are highly targeted, and should be completely unique. While this mi
 
 The descendant selector is expensive and over qualified. Only use when there is no other way (this is likely in Wordpress wp_nav_menus).
 
+### Avoid element selector
+
+The element selector is highly tied to a specific use case. Frequently styles will need to be applied to different elements that fulfill different functions.
+
 ## Linter
 
 Use [CSS Lint][cssLint] for linting your CSS.
@@ -59,10 +53,13 @@ Use [CSS Lint][cssLint] for linting your CSS.
 
 Expect users to not always have the shiniest, latest features. Provide a stable, usable baseline and add improved appearance when properties are available.
 
-Use Modernizr's classes to detect features when available.
+[Can I use](http://caniuse.com/) is a good reference for what properties are available across most browsers.
 
- [sass]: http://sass-lang.com/
- [compass]: compass-style.org
+## Reference
+
+* [Google’s CSS Style Guide](https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+* [Wordpress’ CSS Style Guide](http://make.wordpress.org/core/handbook/coding-standards/css/)
+
  [cssLint]: http://csslint.net/about.html
  [cssLintID]: https://github.com/stubbornella/csslint/wiki/Disallow-IDs-in-selectors
  [wpCSS]: http://make.wordpress.org/core/handbook/coding-standards/css/#property-ordering
