@@ -113,6 +113,24 @@ One *Thing*, be it a class, a template, set of CSS styles, should be contained i
 * Otherwise, files should be lowercase with hyphen (`-`) separation between words
 * File modifications like `gz` and `min` should be separated by a dot `.`
 
+### Directory Structure
+
+Discrete modules should be grouped together. Templates, classes, services, factories, etc that are highly linked conceptually should be grouped together in a directory.
+
+```
++-- home
+|   |
+|   + index.html
+|   |
+|   + homeDirective.js
+|
++-- news
+    |
+    + index.html
+    |
+    + newsService.js
+```
+
 ### Comments
 
 Comments are reserved for descriptions of functionality, not legacy code. Old, untested code should be removed. It will live on in our hearts and our source control.
