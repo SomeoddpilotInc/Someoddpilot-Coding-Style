@@ -25,3 +25,12 @@ Install git
 If you’re following along at home, you should already have Homebrew installed, so all you'll need to do to install git is run:
 
 `brew install git`
+
+Install Node.js
+---------------
+
+[Node.js](http://nodejs.org/) is a fast, scalable platform for web applications. We primarily use Node for managing front end script dependencies and compiling CSS from Stylus. Node will install its dedicated package manager, npm, when you install Node.
+
+Again, all you'll need to do to install Node is run a Homebrew command:
+
+`brew install node`
