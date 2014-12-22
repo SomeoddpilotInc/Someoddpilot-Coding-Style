@@ -8,6 +8,15 @@ HTML code should follow HTML 5 standards for all elements.
 
 * HTML 5 Doctype `<!DOCTYPE html>`
 
+## Attributes
+
+In order to preserve a short line length, elements with many attributes can be split across lines.
+
+```
+<a class="really-long-class-name-that-you-probably-shouldnt-have-used"
+  href="http://www.somewhere.com">
+```
+
 ## Inline Attributes
 
 Inline style and javascript attributes should **NEVER** be used. They are incredibly brittle, hard to maintain, and hard to override.
