@@ -52,6 +52,8 @@ if (condition) {
 
 ```
 if( condition ){ do(something); }
+
+if (condition) do(something);
 ```
 
 Avoid using `else` statements where possible by using returns. This decreases the complexity of functions.
