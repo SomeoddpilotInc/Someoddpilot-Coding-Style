@@ -8,9 +8,9 @@ You should follow some general standards:
 
 Classes should be hyphen deliminated (e.g. `.foo-bar` not `.foo_bar` or `.fooBar`).
 
-## SASS (SCSS)
+## Stylus
 
-CSS should not be handwritten. It should be preprocessed through [SASS][sass] to increase reusabliity, abstraction, and conciseness.
+CSS should not be handwritten. It should be preprocessed through [Stylus](http://learnboost.github.io/stylus/) to increase reusabliity, abstraction, and conciseness.
 
 ## Bootstrap
 
@@ -61,7 +61,6 @@ Expect users to not always have the shiniest, latest features. Provide a stable,
 
 Use Modernizr's classes to detect features when available.
 
- [sass]: http://sass-lang.com/
  [compass]: compass-style.org
  [cssLint]: http://csslint.net/about.html
  [cssLintID]: https://github.com/stubbornella/csslint/wiki/Disallow-IDs-in-selectors
