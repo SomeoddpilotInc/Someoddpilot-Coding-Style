@@ -40,17 +40,17 @@ Third party code should never be included in the source of a project and instead
 
 First party code should be abstracted into a package when feasible.
 
-### Bower
-
-Use [Bower](http://bower.io/) to install front end components.
-
 ### npm
 
 Use [npm](http://www.npmjs.org/) to install Node.js modules.
 
 ### Composer
 
-Use [composer](https://getcomposer.org/) to install PHP modules.
+Use [Composer](https://getcomposer.org/) to install PHP modules.
+
+### Homebrew
+
+Use [Homebrew](http://brew.sh/) to install OS X command line packages.
 
 ### Reference
 
