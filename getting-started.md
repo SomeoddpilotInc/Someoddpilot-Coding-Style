@@ -4,7 +4,7 @@ Getting Started
 Get to know the Terminal
 ------------------------
 
-The terminal is your friend! OS X comes with the Terminal application (which you can find under Applications > Utilities), but I personally find [iTerm 2](http://iterm2.com/) much more robust and customizable.
+The terminal is your friend! OS X comes with the Terminal application (which you can find under `Applications > Utilities`), but I personally find [iTerm 2](http://iterm2.com/) much more robust and customizable.
 
 The method of text input on the command line and the accompanying feeling of overwhelming power can be hard to work with at first, but try to push yourself to do more and more from the command line. You should quickly find it to be flexible and significantly faster than clicking through GUIs.
 
