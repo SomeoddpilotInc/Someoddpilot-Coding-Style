@@ -53,7 +53,7 @@ Use [CSS Lint][cssLint] for linting your CSS.
 
 Expect users to not always have the shiniest, latest features. Provide a stable, usable baseline and add improved appearance when properties are available.
 
-Use Modernizr's classes to detect features when available.
+[Can I use](http://caniuse.com/) is a good reference for what properties are available across most browsers.
 
 ## Reference
 
