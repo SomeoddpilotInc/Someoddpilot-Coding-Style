@@ -50,7 +50,7 @@ ID selectors are highly targeted, and should be completely unique. While this mi
 
 ### Don't use descendant selector
 
-The descendant selector is expensive and over qualified. If nesting of elements change, this selector will no longer work.
+The descendant selector is expensive and over qualified. If nesting of elements changes, this selector will no longer work.
 
 ### Avoid element selector
 
