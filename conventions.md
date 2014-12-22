@@ -58,6 +58,24 @@ if (condition) do(something);
 
 Avoid using `else` statements where possible by using returns. This decreases the complexity of functions.
 
+**Okay**
+```
+if (foo) {
+  bar();
+} else {
+  baz();
+}
+```
+
+**Better**
+```
+if (foo) {
+  bar();
+  return;
+}
+baz();
+```
+
 ### Naming
 
 * Class names MUST be declared in `StudlyCaps`.
