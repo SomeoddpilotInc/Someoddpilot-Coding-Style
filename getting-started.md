@@ -49,3 +49,17 @@ Be sure to install the EditorConfig plugin for your editor:
 * [EditorConfig for Sublime](https://github.com/sindresorhus/editorconfig-sublime)
 * [EditorConfig for Vim](https://github.com/editorconfig/editorconfig-vim)
 * [EditorConfig for Emacs](https://github.com/editorconfig/editorconfig-emacs)
+
+Install ESLint
+--------------
+
+[ESLint](http://eslint.org/) is a powerful linter for Javascript which covers significantly more territory than older Javascript linters.
+
+ESLint can be install via npm.
+
+`npm install eslint -g`
+
+Be sure to install the plugin for your editor:
+
+* [SublimeLinter ESLint](https://github.com/roadhump/SublimeLinter-eslint)
+* [Syntastic for Vim](https://github.com/scrooloose/syntastic)
