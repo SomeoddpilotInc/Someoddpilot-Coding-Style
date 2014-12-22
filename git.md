@@ -29,6 +29,7 @@ Credentials include:
 * SSH keys
 * Usernames and passwords
 * Software licenses
+* FTP configurations
 
 ### Copyrighted and licensed material
 
@@ -49,3 +50,17 @@ Package managers install dependencies into specific directories. These packages 
 * node_modules (npm)
 * vendor (compsoer)
 * bower_components (bower)
+
+### OS and Editor Cruft
+
+Operating systems and editors create a lot of behind the scenes cruft which don’t relate to the state of the project. Keep these files out of the repo as they do not apply to other team members’ working environment.
+
+Some examples of cruft are:
+
+* `.DS_Store`
+* `Thumbs.db`
+* `*.cache`
+* `.sublime-workspace`
+* `.sublime-project`
+* `*~`
+* `*.swp`
