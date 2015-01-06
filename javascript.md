@@ -94,6 +94,12 @@ wp_localize_script(
 wp_enqueue_script('some-handle');
 ```
 
+## Style Guide
+
+### Google’s Javascript Style Guide
+
+[Google’s Javascript Style Guide](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) is an excellend resource to follow for most Javascript style concerns.
+
 [npm]: https://www.npmjs.org/
 [node]: http://nodejs.org/
 [grunt]: http://gruntjs.com/
