@@ -42,10 +42,6 @@ Modules should be loaded when required by the scripts they depend on. We use [Br
 
 All Javascript code should be built with the expectation that it will be minified before being deployed.
 
-## Bower
-
-Files for front end Javascript modules should be installed via [Bower][bower]. Bower provides an easy way to install, update, and manage dependencies of common front end components.
-
 ## Node
 
 [Node][node] is a powerful server-side version of Javascript. Many useful development tools are built on node.
