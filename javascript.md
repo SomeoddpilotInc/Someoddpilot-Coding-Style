@@ -74,24 +74,12 @@ Standard, widely used libraries like jQuery, Backbone, and Underscore are availa
 
 #### Globals
 
-Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized at enqueueing using [wp_localize_script](http://codex.wordpress.org/Function_Reference/wp_localize_script). This is also a useful method for bootstrapping data for Backbone.
+Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized.
 
 ```
-wp_register_script('some-handle', 'path/to/myscript.js');
-
-$translation_array = array(
-    'someString' => __('Some string to translate'),
-    'aValue' => '10'
-);
-
-wp_localize_script(
-    'some-handle',
-    'objectName',
-    $translation_array
-);
-
-// The script can be enqueued now or later.
-wp_enqueue_script('some-handle');
+<script>
+var fooConfig = <?php echo json_encode(array("bar" => "baz")); ?>;
+</script>
 ```
 
 ## Style Guide
