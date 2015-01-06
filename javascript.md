@@ -30,6 +30,10 @@ Lodash is Underscore's more elegant, improved descendant. In most every case, it
 
 JSHint provides [a good starting point][jshintDefaults] for a defaults file.
 
+## AngularJS
+
+AngularJS extends HTML’s vocabularity using Javascript to allow quick and flexible development of rich web applications.
+
 ## Modularity
 
 Javascript compontents should be written in a modular fashion. Dependencies should be clear and variables and functions should be encapsulated.
