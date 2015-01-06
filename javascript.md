@@ -68,10 +68,6 @@ We use Jasmine for our Javascript unit testing.
 
 ### Wordpress
 
-#### Enqueueing
-
-Standard, widely used libraries like jQuery, Backbone, and Underscore are available for enqueueing from the Wordpress core. These must absolutely be enqueued using the standard arguments. Plugins and core functionality expects these scripts to be loaded and configured in a particular manner.
-
 #### Globals
 
 Certain values, such as URLs and values set in the admin, should not be assumed to be static. These values should be localized.
