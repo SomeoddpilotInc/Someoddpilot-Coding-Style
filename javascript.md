@@ -54,15 +54,9 @@ Files for front end Javascript modules should be installed via [Bower][bower]. B
 
 [npm][npm] is the standard Node.js package manager. It provides an excellent way to install and manage Javascript packages.
 
-## Grunt
+## Gulp
 
-[Grunt][grunt] is a Node based task runner that can perform a number of useful development tasks like minification, concatenization, and documenation.
-
-## Testing
-
-### Jasmine
-
-We use Jasmine for our Javascript unit testing.
+[Gulp](http://gulpjs.com) is a Node based task runner that can perform a number of useful development tasks like minification, concatenization, and documenation.
 
 ## Environments
 
