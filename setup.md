@@ -38,4 +38,10 @@ brew install git
 
 # Install editorconfig
 brew install editorconfig
+
+# Install composer
+brew install josegonzalez/php/composer
+
+# Install gulp
+npm install -g gulp
 ```
