@@ -26,6 +26,36 @@ brew cask install alfred
 # A better OS X terminal
 brew cask install iterm2
 
+# Install 1Password
+brew cask install 1password
+
+# Install Chronosync
+brew cask install chronosync
+
+# Install Cyberduck
+brew cask install cyberduck
+
+# Install Firefox
+brew cask install firefox
+
+# Install ImageOptim
+brew cask install imageoptim
+
+# Install ImageAlpha
+brew cask install imagealpha
+
+# Install Cocoa Rest Client
+brew cask install cocoarestclient
+
+# Install Quicklook Markdown
+brew cask install qlmarkdown
+
+# Install Quicklook CSV
+brew cask install quicklook-csv
+
+# Install Quicklook JSON
+brew cask install quicklook-json
+
 # Install Sequel Pro
 # A GUI for admining mySQL
 brew cask install sequel-pro
