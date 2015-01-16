@@ -56,6 +56,10 @@ brew cask install quicklook-csv
 # Install Quicklook JSON
 brew cask install quicklook-json
 
+# Install MAMP
+# For the more brave: try Vagrant, Virtual Box, and puphpet
+brew cask install mamp
+
 # Install Sequel Pro
 # A GUI for admining mySQL
 brew cask install sequel-pro
