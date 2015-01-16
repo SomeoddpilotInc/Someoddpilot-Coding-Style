@@ -60,6 +60,10 @@ brew cask install quicklook-json
 # For the more brave: try Vagrant, Virtual Box, and puphpet
 brew cask install mamp
 
+# Install Sublime Text
+# For the more brave: try vim
+brew cask install sublime-text
+
 # Install Sequel Pro
 # A GUI for admining mySQL
 brew cask install sequel-pro
