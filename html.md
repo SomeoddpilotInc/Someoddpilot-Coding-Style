@@ -28,7 +28,7 @@ Inline style and javascript attributes should **NEVER** be used. They are incred
 <div style="background: green;" onclick="alert()"></div>
 ```
 
-**Bad**
+**Good**
 
 ```
 <!-- index.html -->
