@@ -62,7 +62,8 @@ brew cask install mamp
 
 # Install Sublime Text
 # For the more brave: try vim
-brew cask install sublime-text
+brew tap caskroom/versions
+brew cask install sublime-text3
 
 # Install Sequel Pro
 # A GUI for admining mySQL
