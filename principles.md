@@ -38,7 +38,7 @@ Minimize the number of dependencies and assumptions for each module.
 
 Similar functionality should be found within the same component.
 
-* [Cohesion - Wikipedia](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
+* [Cohesion - Wikipedia](http://en.wikipedia.org/wiki/Cohesion_(computer_science))
 
 ## Hide Implementation Details
 
