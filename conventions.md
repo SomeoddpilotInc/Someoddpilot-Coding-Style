@@ -2,7 +2,7 @@
 
 ### Tabs
 
-Code MUST use 2 spaces for indenting tabs. (Except for PHP which uses a 4 space standard)
+Code MUST use 2 spaces for indenting tabs.
 
 ### Line length
 
