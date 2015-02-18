@@ -1,6 +1,6 @@
 # Someoddpilot HTML Style
 
-Wordpress has some [good general outlines for HTML style](http://make.wordpress.org/core/handbook/coding-standards/html/).
+Github has some [good general outlines for HTML style](https://github.com/styleguide/templates).
 
 ## HTML 5
 
