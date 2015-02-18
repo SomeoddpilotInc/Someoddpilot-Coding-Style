@@ -1,12 +1,29 @@
 # Someoddpilot HTML Style
 
-Wordpress has some [good general outlines for HTML style](http://make.wordpress.org/core/handbook/coding-standards/html/).
+Github has some [good general outlines for HTML style](https://github.com/styleguide/templates).
 
 ## HTML 5
 
 HTML code should follow HTML 5 standards for all elements.
 
 * HTML 5 Doctype `<!DOCTYPE html>`
+
+## Formatting
+
+* Paragraphs of text should always be placed in a `<p>` tag. Never use multiple `<br>` tags.
+* Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
+* Every form input that has text attached should utilize a <label> tag. Especially radio or checkbox elements.
+* Even though quotes around attributes is optional, always put quotes around attributes for readability.
+* Avoid writing closing tag comments, like `<!-- /.element -->`. This just adds to page load time. Plus, most editors have indentation guides and open-close tag highlighting.
+* Avoid trailing slashes in self-closing elements. For example, `<br>`, `<hr>`, `<img>`, and `<input>`.
+* Don't set tabindex manually—rely on the browser to set the order.
+
+## Forms
+
+* Lean towards radio or checkbox lists instead of select menus.
+* Wrap radio and checkbox inputs and their text in `<label>`s. No need for for attributes here—the wrapping automatically associates the two.
+* Form buttons should always include an explicit type. Use primary buttons for the `type="submit"` button and regular buttons for `type="button"`.
+* The primary form button must come first in the DOM, especially for forms with multiple submit buttons. The visual order should be preserved with float: right; on each button.
 
 ## Attributes
 
