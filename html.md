@@ -8,6 +8,16 @@ HTML code should follow HTML 5 standards for all elements.
 
 * HTML 5 Doctype `<!DOCTYPE html>`
 
+## Formatting
+
+* Paragraphs of text should always be placed in a <p> tag. Never use multiple <br> tags.
+* Items in list form should always be in <ul>, <ol>, or <dl>. Never use a set of <div> or <p>.
+* Every form input that has text attached should utilize a <label> tag. Especially radio or checkbox elements.
+* Even though quotes around attributes is optional, always put quotes around attributes for readability.
+* Avoid writing closing tag comments, like <!-- /.element -->. This just adds to page load time. Plus, most editors have indentation guides and open-close tag highlighting.
+* Avoid trailing slashes in self-closing elements. For example, <br>, <hr>, <img>, and <input>.
+* Don't set tabindex manually—rely on the browser to set the order.
+
 ## Attributes
 
 In order to preserve a short line length, elements with many attributes can be split across lines.
