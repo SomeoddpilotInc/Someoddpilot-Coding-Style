@@ -134,3 +134,7 @@ Discrete modules should be grouped together. Templates, classes, services, facto
 ### Comments
 
 Comments are reserved for descriptions of functionality, not legacy code. Old, untested code should be removed. It will live on in our hearts and our source control.
+
+### Duplications/convenience
+
+Never duplicate functionality for the convenience of a shorter name.
