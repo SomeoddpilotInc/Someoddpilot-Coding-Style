@@ -12,3 +12,20 @@
 * Sometimes an off the shelf solution will satisfy your desire to build better than building it yourself
 * Maintain someone else's work
 
+## Fix what isn't broken
+
+* Don’t take requirements for a project for granted. Investigate why each aspect is called for and how they relate.
+* Use abstraction layers, but don’t lay on too much
+* Find ways to reduce the size of the codebase without adding new functionality
+* Look to existing functionality to see what can be extended or repurposed before adding
+
+## Think in code
+
+* Code blind
+
+## Live by your language
+
+* Avoid cross-platform solutions
+* Sometimes maintaining functionality in two separate codebases *is* sipmler
+
+1. [Signs that you’re a good programmer](http://www.yacoset.com/Home/signs-that-you-re-a-good-programmer/)
