@@ -2,10 +2,10 @@
 
 ### Ignoring the bigger picture
 
-* Maintaining code unrelated to the goal of the project (initializing variables that are never used, producing unused output)
+* Maintaining dead code
 * Fixing bugs by overwriting the symptoms of the faulty code
 * “Yo Yo” code that converts a value between different representations
-* Breaking out subroutines that are impossible to reuse in other contexts
+* Breaking out high cohesion subroutines that are impossible to reuse in other contexts
 
 ### Loose grasp on language
 
