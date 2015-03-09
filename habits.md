@@ -21,6 +21,11 @@
 * Find ways to reduce the size of the codebase without adding new functionality
 * Look to existing functionality to see what can be extended or repurposed before adding
 
+### Ignore heirarchy
+
+* Don’t ask. Do.
+* Don’t depend on others to lay or enforce guidelines.
+
 ### Think in code
 
 * Code blind
