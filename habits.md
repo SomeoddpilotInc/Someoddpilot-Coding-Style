@@ -28,4 +28,9 @@
 * Avoid cross-platform solutions
 * Sometimes maintaining functionality in two separate codebases *is* sipmler
 
+## Be excited by failure
+
+* Research historic failures to understand their causes and effects
+* Take on a small but impossible project
+
 1. [Signs that you’re a good programmer](http://www.yacoset.com/Home/signs-that-you-re-a-good-programmer/)
