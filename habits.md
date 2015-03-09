@@ -1,3 +1,44 @@
+## Bad Habits
+
+### Ignoring the bigger picture
+
+* Maintaining code unrelated to the goal of the project (initializing variables that are never used, producing unused output)
+* Fixing bugs by overwriting the symptoms of the faulty code
+* “Yo Yo” code that converts a value between different representations
+* Breaking out subroutines that are impossible to reuse in other contexts
+
+### Loose grasp on language
+
+* Using just enough proper syntax needed to break out and writing the rest in a familiar, but improper way.
+* Using multiple algorithms to handle different types of operators rather than passing high level functions to generic implementations
+
+### Poor research
+
+* Re-inventing or working without basic mechanisms, classes, and functions of the language or framework
+
+### Distrust of code
+
+* Writing primative boolean functions (`isNull`, `isNotNull`, `isTrue`, `isFalse`)
+* Checking boolean variables for anything other than true or false
+
+### Thinking in individual items
+
+* Looping over collections with `for` or `foreach`
+* Integrating business-logic with UI or file I/O
+
+### Poor security
+
+* Storing exploitable information in plaintext
+* Not performing input validation
+* Invoking functions named by user input
+
+### Messy code
+
+* Doesn’t follow a consistent naming convention
+* Doesn’t use or uses inconsistent indentation
+* Doesn’t properly use whitespace in statements
+* Leaves chunks of code commented out
+
 ## Good Habits
 
 ### Experiment
