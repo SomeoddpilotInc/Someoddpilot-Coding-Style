@@ -61,3 +61,25 @@ Approve--->
   V
 Production
 ```
+
+## Phasing out code
+
+Sometimes it comes time to phase code which was used in production, but no longer is used. There are a few ways to handle the phase out.
+
+### Comment out
+
+Commenting out code is the most direct, but is not advised. While commented out code clearly communicates its inactive nature, it presents a false impression that it will work if uncommented.
+
+**Do not leave commented out code in the codebase.**
+
+### Delete code from file
+
+Deleting code from a file is another direct way to remove code from the codebase. The code will be retained in source control, so it if is needed, it can easily be recovered.
+
+Deleting code is the best option if there is no forseeable use for the code in the future.
+
+### Create a configuration option
+
+Sometimes code can be configured to not use the phased out code, while retaining it in the codebase. This is done by way of passing an option to enable or disable the deprecated functionality.
+
+Adding a configuration option is the best solution is the code will likely be used again in the future.
