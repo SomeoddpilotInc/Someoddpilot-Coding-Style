@@ -76,6 +76,20 @@ function doSomething(element) {
 
 * [Law of Demeter - Wikipedia](http://en.wikipedia.org/wiki/Law_of_Demeter)
 
+## 7±2
+
+Humans can typically only hold around seven objects in working memory. This amount is modified by a number between negative and positive two depending on mood, health, etc.
+
+* [The Magical Number Seven - Wikipedia](http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
+
+## Rule of three
+
+A good rule for when to refactor your code is when you find yourself using a structure three times or more. This applies to potential datasets where there may possible be three or more, but are currently only two or one.
+
+Duplication is bad because it makes a program harder to comprehend and means more code to edit.
+
+* [Rule of Three - Wikipedia](http://en.wikipedia.org/wiki/Rule_of_three_%28computer_programming%29)
+
 ## Avoid Premature Optimization
 
 Don't worry about optimization until code is working but slower than needed.
