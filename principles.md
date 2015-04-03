@@ -109,6 +109,10 @@ Don't worry about optimization until code is working but slower than needed.
 >  "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil"
 <cite>- Donald Knuth</cite>
 
+## Return Early
+
+Return early for early eliminations before any heavy work.
+
 * [Program Optimization - Wikipedia](http://en.wikipedia.org/wiki/Program_optimization)
 
 ## Separation of Concerns
