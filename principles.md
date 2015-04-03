@@ -90,6 +90,18 @@ Duplication is bad because it makes a program harder to comprehend and means mor
 
 * [Rule of Three - Wikipedia](http://en.wikipedia.org/wiki/Rule_of_three_%28computer_programming%29)
 
+## Dunbar’s Number
+
+> Dunbar's number is a suggested cognitive limit to the number of people with whom one can maintain stable social relationships.
+
+Dunbar’s number can be applied to computer science by considering a developer’s relationship with and understanding of components of a system.
+
+> By using the average human brain size and extrapolating from the results of primates, he proposed that humans can only comfortably maintain 150 stable relationships.
+
+Developers can only accurately remember and make use of a certain number components.
+
+* [Dunbar’s Number - Wikipedia](http://en.wikipedia.org/wiki/Dunbar%27s_number)
+
 ## Avoid Premature Optimization
 
 Don't worry about optimization until code is working but slower than needed.
