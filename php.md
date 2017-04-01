@@ -36,7 +36,7 @@ class Foo extends Bar implements FooInterface
 
 ## Linter
 
-[PHP CodeSniffer][phpCS] is a rock solid linter for PHP standards.
+[PHP CodeSniffer][phpCS] is a rock solid linter for PHP standards. There is a custom [coding standard](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Coding-Standard-Tutorial) that reflects many of the standards described in this document. You can learn how to use it with PHP CodeSniffer by reading the standard's [README](../someoddpilot-phpcs-standard/README.md).
 
 [PHP Mess Detector][phpMD] is another vital part of the PHP linting workflow. It tests for unused variables, bugs, suboptimal code, and complicated expressions.
 
