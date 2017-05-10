@@ -40,9 +40,9 @@ Third party code should never be included in the source of a project and instead
 
 First party code should be abstracted into a package when feasible.
 
-### npm
+### yarn
 
-Use [npm](http://www.npmjs.org/) to install Node.js modules.
+Use [yarn](https://yarnpkg.com/en/) to install Node.js modules. Yarn is a port of [npm](http://www.npmjs.org/), so you should be familiar with npm.
 
 ### Composer
 
