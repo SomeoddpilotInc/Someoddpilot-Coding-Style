@@ -65,8 +65,6 @@ color
 * [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
 * [9elements CSS order](http://9elements.com/css-rule-order/)
 
-#code/css #sop
-
 ## Selectors
 
 Always target elements using these techniques in this order:
