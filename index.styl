@@ -1,34 +1,46 @@
 display
 position
+
 top
 right
 bottom
 left
+transform
 
+// document flow disruptors
 float
 clear
 flex-*
 (align-*, justify-*, order)
 
-z-index
 opacity
 visibility
+z-index
 
+// dimensions
 width
+min-width
 max-width
 height
+min-height
 max-height
 
+// box model
 margin
+outline
 border
 padding
 
+// document flow adjustments
 overflow
 box-sizing
 vertical-align
 
-outline
+// visual appearance
+color
 background
+border-*
+border-radius
 box-shadow
 
 // element- and type-specific styles should be separated
@@ -40,6 +52,7 @@ border-collapse
 border-spacing
 empty-cells
 
+// typography
 text-align
 text-transform
 text-decoration
@@ -49,10 +62,12 @@ font-family
 font-size
 font-weight
 
-color
+// animations
+animation
+transition
 
 // pseudo-elements come last, & start with the
-// content property before repeating order above
+// `content` property before repeating order above
 :before
 :after
   content

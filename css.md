@@ -20,7 +20,7 @@ Maintaining this order makes our stylesheets more scannable, and more instructiv
 
 Mixins, an `@extend`, or variables which output CSS (such as `font-specs(x, x, x)` from `sop-styl`) should be placed at the top of its relevant group.
 
-```
+```css
 // Element's flow in DOM and location
 display
 position
@@ -29,38 +29,43 @@ float
 clear
 
 // Element's visibility and stack
-z-index
 opacity
 visibility
+z-index
 
 // Defined dimensions
 width
 height
 
-// Box model properties, outside-in
+// Box model properties
 margin
 border
 padding
 
-// Changes to flow defaults
+// Changes to document flow
 overflow
 box-sizing
 vertical-align
 
 // Visual appearance
-outline
+color
 background
+border-radius
 
 // Text styles
-text
-font
-color
-```
+text-align
 
+font-size
+
+// animations
+animation
+transition
+```
 
 [Expanded CSS property order](https://github.com/SomeoddpilotInc/Someoddpilot-Coding-Style/blob/master/index.styl)
 
 ### Other examples and inspiration
+* [Outside-In CSS Order](https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
 * [Concentric CSS](https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style.css)
 * [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
 * [9elements CSS order](http://9elements.com/css-rule-order/)
