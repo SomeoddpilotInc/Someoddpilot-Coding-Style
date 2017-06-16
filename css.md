@@ -14,15 +14,61 @@ CSS should not be handwritten. It should be preprocessed through [Stylus](http:/
 
 ## Property ordering
 
-Properties should be in this general order:
+SOP orders CSS properties by importance. This approach prioritizes and groups different /types/ of CSS rules, in order to present the /most significant/ styles first.
 
-* Display
-* Positioning
-* Box model
-* Colors and Typography
-* Other (transitions, animations, translations)
+Maintaining this order makes our stylesheets more scannable, and more instructive. Mapping CSS properties according to the significance of their effect shortens the search for any CSS property that drastically changes an element’s position, stacking context, or size.
 
-This ordering help clarify how an element relates with other models first, then its more isolated style attributes.
+Mixins, an `@extend`, or variables which output CSS (such as `font-specs(x, x, x)` from `sop-styl`) should be placed at the top of its relevant group.
+
+```css
+// Element's flow in DOM and location
+display
+position
+
+float
+clear
+
+// Element's visibility and stack
+opacity
+visibility
+z-index
+
+// Defined dimensions
+width
+height
+
+// Box model properties
+margin
+border
+padding
+
+// Changes to document flow
+overflow
+box-sizing
+vertical-align
+
+// Visual appearance
+color
+background
+border-radius
+
+// Text styles
+text-align
+
+font-size
+
+// animations
+animation
+transition
+```
+
+[Expanded CSS property order](https://github.com/SomeoddpilotInc/Someoddpilot-Coding-Style/blob/master/index.styl)
+
+### Other examples and inspiration
+* [Outside-In CSS Order](https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
+* [Concentric CSS](https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style.css)
+* [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+* [9elements CSS order](http://9elements.com/css-rule-order/)
 
 ## Selectors
 
