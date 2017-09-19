@@ -20,7 +20,7 @@ Maintaining this order makes our stylesheets more scannable, and more instructiv
 
 Mixins, an `@extend`, or variables which output CSS (such as `font-specs(x, x, x)` from `sop-styl`) should be placed at the top of its relevant group.
 
-```css
+```styl
 // Element's flow in DOM and location
 display
 position
@@ -75,7 +75,7 @@ transition
 Always target elements using these techniques in this order:
 
 * Add a specific class to the element
-* Add a specific class to the parent and target the element using the parents class and a child tag name
+* Add a specific class to the parent and target the element using the parent's class and a child tag name
 
 Do not overqualify selectors. Only use as many selectors as are needed to target the element without over specificity or underspecificity.
 
